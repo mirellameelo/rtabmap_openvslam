@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:179:49:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+         left_image_msg->header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+                                                 [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:186:50:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+         right_image_msg->header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+                                                  [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:189:45:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+         left_config.header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+                                             [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:200:46:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+         right_config.header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+                                              [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:147:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:148:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

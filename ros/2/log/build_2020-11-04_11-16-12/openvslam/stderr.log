@@ -1,0 +1,3 @@
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Interrupção
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Interrupção
+make: *** [all] Interrupção

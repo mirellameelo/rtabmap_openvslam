@@ -1,0 +1,99 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:254:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kheader[m[K’
+     tf_msg.[01;31m[Kheader[m[K.stamp = node->now();
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:255:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kheader[m[K’
+     tf_msg.[01;31m[Kheader[m[K.frame_id = "base_link";
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:256:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kchild_frame_id[m[K’
+     tf_msg.[01;31m[Kchild_frame_id[m[K = "camera_link";
+            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:257:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.translation.x = 0.0;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:258:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.translation.y = 0.0;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:259:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.translation.z = 0.0;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:260:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.rotation.x = -0.5;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:261:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.rotation.y = 0.5;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:262:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.rotation.z = -0.5;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:263:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg.[01;31m[Ktransform[m[K.rotation.w = 0.5;
+            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:264:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::StaticTransformBroadcaster::sendTransform(std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >&)[m[K’
+     tf_broadcaster->sendTransform(tf_msg[01;31m[K)[m[K;
+                                         [01;31m[K^[m[K
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:38:0[m[K:
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:69:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::StaticTransformBroadcaster::sendTransform(const TransformStamped&)
+   void [01;36m[KsendTransform[m[K(const geometry_msgs::msg::TransformStamped & transform);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:69:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst TransformStamped& {aka const geometry_msgs::msg::TransformStamped_<std::allocator<void> >&}[m[K’
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::StaticTransformBroadcaster::sendTransform(const std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&)
+   void [01;36m[KsendTransform[m[K(const std::vector<geometry_msgs::msg::TransformStamped> & transforms);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&[m[K’
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:269:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kheader[m[K’
+     tf_msg_odom.[01;31m[Kheader[m[K.stamp = node->now();
+                 [01;31m[K^~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:270:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kheader[m[K’
+     tf_msg_odom.[01;31m[Kheader[m[K.frame_id = "map";
+                 [01;31m[K^~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:271:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kchild_frame_id[m[K’
+     tf_msg_odom.[01;31m[Kchild_frame_id[m[K = "odom";
+                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:272:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.translation.x = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:273:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.translation.y = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:274:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.translation.z = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:275:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.rotation.x = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:276:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.rotation.y = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:277:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.rotation.z = 0.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:278:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Ktransform[m[K’
+     tf_msg_odom.[01;31m[Ktransform[m[K.rotation.w = 1.0;
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:279:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::StaticTransformBroadcaster::sendTransform(std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >&)[m[K’
+     tf_broadcaster_odom->sendTransform(tf_msg_odom[01;31m[K)[m[K;
+                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:38:0[m[K:
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:69:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::StaticTransformBroadcaster::sendTransform(const TransformStamped&)
+   void [01;36m[KsendTransform[m[K(const geometry_msgs::msg::TransformStamped & transform);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:69:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst TransformStamped& {aka const geometry_msgs::msg::TransformStamped_<std::allocator<void> >&}[m[K’
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::StaticTransformBroadcaster::sendTransform(const std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&)
+   void [01;36m[KsendTransform[m[K(const std::vector<geometry_msgs::msg::TransformStamped> & transforms);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/static_transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&[m[K’
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:177:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:89:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

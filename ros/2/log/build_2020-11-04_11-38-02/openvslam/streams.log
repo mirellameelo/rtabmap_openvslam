@@ -1,0 +1,61 @@
+[0.027s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.086s] [35m[1mScanning dependencies of target run_slam[0m
+[0.136s] [ 50%] Built target run_localization
+[0.182s] [ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[5.749s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5)[m[K’:
+[5.749s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:117:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.749s]      odom_msg_[01;31m[K->[m[Kheader.stamp = node->now();
+[5.749s]               [01;31m[K^~[m[K
+[5.749s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:118:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.750s]      odom_msg_[01;31m[K->[m[Kheader.frame_id = "odom";
+[5.750s]               [01;31m[K^~[m[K
+[5.750s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:119:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.750s]      odom_msg_[01;31m[K->[m[Kchild_frame_id = "base_link";
+[5.750s]               [01;31m[K^~[m[K
+[5.750s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:120:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.750s]      odom_msg_[01;31m[K->[m[Kpose.pose.orientation.x = transform_tf.getRotation().getX();
+[5.750s]               [01;31m[K^~[m[K
+[5.750s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:121:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.751s]      odom_msg_[01;31m[K->[m[Kpose.pose.orientation.y = transform_tf.getRotation().getY();
+[5.751s]               [01;31m[K^~[m[K
+[5.751s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:122:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.751s]      odom_msg_[01;31m[K->[m[Kpose.pose.orientation.z = transform_tf.getRotation().getZ();
+[5.751s]               [01;31m[K^~[m[K
+[5.751s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:123:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.751s]      odom_msg_[01;31m[K->[m[Kpose.pose.orientation.w = transform_tf.getRotation().getW();
+[5.751s]               [01;31m[K^~[m[K
+[5.751s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:124:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.751s]      odom_msg_[01;31m[K->[m[Kpose.pose.position.x = transform_tf.getOrigin().getX();
+[5.752s]               [01;31m[K^~[m[K
+[5.752s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:125:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.752s]      odom_msg_[01;31m[K->[m[Kpose.pose.position.y = transform_tf.getOrigin().getY();
+[5.752s]               [01;31m[K^~[m[K
+[5.752s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:126:14:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.752s]      odom_msg_[01;31m[K->[m[Kpose.pose.position.z = transform_tf.getOrigin().getZ();
+[5.752s]               [01;31m[K^~[m[K
+[5.768s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[5.768s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:179:49:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.768s]          left_image_msg->header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+[5.768s]                                                  [01;31m[K^~[m[K
+[5.768s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:186:50:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.769s]          right_image_msg->header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+[5.769s]                                                   [01;31m[K^~[m[K
+[5.769s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:189:45:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.769s]          left_config.header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+[5.769s]                                              [01;31m[K^~[m[K
+[5.769s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:200:46:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Knav_msgs::msg::Odometry {aka nav_msgs::msg::Odometry_<std::allocator<void> >}[m[K’
+[5.769s]          right_config.header.stamp = odom_msg_[01;31m[K->[m[Kheader.stamp;
+[5.769s]                                               [01;31m[K^~[m[K
+[5.777s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:147:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.777s]                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+[5.778s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~[m[K
+[5.778s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:148:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[5.778s]                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+[5.778s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[10.660s] make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+[10.661s] src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+[10.661s] make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+[10.661s] make: *** [all] Error 2
+[10.662s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+[10.662s] Makefile:140: recipe for target 'all' failed
+[10.663s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '2': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12

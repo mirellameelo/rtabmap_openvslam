@@ -1,0 +1,1 @@
+/home/mirella/openvslam/ros/2/build/publisher/ament_cmake_core/publisherConfig.cmake

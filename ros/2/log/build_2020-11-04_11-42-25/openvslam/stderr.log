@@ -1,0 +1,26 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:177:87:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kcv_bridge::CvImage[m[K’
+         left_image_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_left)[01;31m[K->[m[KtoImageMsg();
+                                                                                       [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:184:101:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ksensor_msgs::msg::Image {aka sensor_msgs::msg::Image_<std::allocator<void> >}[m[K’ and ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >}[m[K’)
+         right_image_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_right).toImageMsg([01;31m[K)[m[K;
+                                                                                                     [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/sensor_msgs/msg/image.hpp:7:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/image_transport/camera_publisher.h:41[m[K,
+                 from [01m[K/opt/ros/eloquent/include/image_transport/image_transport.h:45[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:26[m[K:
+[01m[K/opt/ros/eloquent/include/sensor_msgs/msg/image__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: sensor_msgs::msg::Image_<std::allocator<void> >& sensor_msgs::msg::Image_<std::allocator<void> >::operator=(const sensor_msgs::msg::Image_<std::allocator<void> >&)
+ struct [01;36m[KImage_[m[K
+        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/sensor_msgs/msg/image__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/eloquent/include/sensor_msgs/msg/image__struct.hpp:35:8:[m[K [01;36m[Knote: [m[Kcandidate: sensor_msgs::msg::Image_<std::allocator<void> >& sensor_msgs::msg::Image_<std::allocator<void> >::operator=(sensor_msgs::msg::Image_<std::allocator<void> >&&)
+[01m[K/opt/ros/eloquent/include/sensor_msgs/msg/image__struct.hpp:35:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >&&[m[K’
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:147:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:148:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

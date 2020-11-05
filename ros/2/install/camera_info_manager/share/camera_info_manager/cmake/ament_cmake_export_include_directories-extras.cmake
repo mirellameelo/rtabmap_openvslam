@@ -1,0 +1,1 @@
+/home/mirella/openvslam/ros/2/build/camera_info_manager/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake

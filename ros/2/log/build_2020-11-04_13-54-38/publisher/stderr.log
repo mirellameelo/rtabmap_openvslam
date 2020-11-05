@@ -1,0 +1,11 @@
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:69:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+         std::string stg_left = ([01;31m[Kframe[m[K.img_path_ + s + extension).c_str();
+                                 [01;31m[K^~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:69:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kframes[m[K’
+         std::string stg_left = ([01;36m[Kframe[m[K.img_path_ + s + extension).c_str();
+                                 [01;36m[K^~~~~[m[K
+                                 [32m[Kframes[m[K
+make[2]: *** [src/CMakeFiles/image_publisher.dir/image_publisher.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/image_publisher.dir/all] Error 2
+make: *** [all] Error 2

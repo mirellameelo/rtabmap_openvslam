@@ -1,0 +1,105 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.8.0 (/opt/ros/eloquent/share/ament_cmake_ros/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+-- Found yaml_cpp_vendor: 7.0.0 (/opt/ros/eloquent/share/yaml_cpp_vendor/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/eloquent/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+-- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)
+-- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)
+-- Found ament_cmake_lint_cmake: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_lint_cmake/cmake)
+-- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)
+-- Found gtest sources under '/opt/ros/eloquent/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mirella/openvslam/ros/2/build/camera_calibration_parsers
+[35m[1mScanning dependencies of target gtest[0m
+[35m[1mScanning dependencies of target gtest_main[0m
+[35m[1mScanning dependencies of target camera_calibration_parsers[0m
+[  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers.dir/src/parse_ini.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers.dir/src/parse.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers.dir/src/parse_yml.cpp.o[0m
+[ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 42%] Built target gtest_main
+[ 50%] [32m[1mLinking CXX shared library libcamera_calibration_parsers.so[0m
+[ 50%] Built target camera_calibration_parsers
+[35m[1mScanning dependencies of target convert[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/convert.dir/src/convert.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable convert[0m
+[ 64%] Built target convert
+[ 71%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 71%] Built target gtest
+[35m[1mScanning dependencies of target camera_calibration_parsers-parse_yml[0m
+[35m[1mScanning dependencies of target camera_calibration_parsers-parse_ini[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers-parse_yml.dir/test/test_parse_yml.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers-parse_ini.dir/test/test_parse_ini.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable camera_calibration_parsers-parse_yml[0m
+[ 92%] Built target camera_calibration_parsers-parse_yml
+[100%] [32m[1mLinking CXX executable camera_calibration_parsers-parse_ini[0m
+[100%] Built target camera_calibration_parsers-parse_ini
+[ 28%] Built target gtest
+[ 28%] Built target gtest_main
+[ 57%] Built target camera_calibration_parsers
+[ 71%] Built target camera_calibration_parsers-parse_yml
+[ 85%] Built target convert
+[100%] Built target camera_calibration_parsers-parse_ini
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/libcamera_calibration_parsers.so
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/camera_calibration_parsers/convert
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.h
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.h
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/visibility_control.hpp
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.sh
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/package_run_dependencies/camera_calibration_parsers
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/parent_prefix_path/camera_calibration_parsers
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.sh
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.sh
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.bash
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.sh
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.zsh
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/packages/camera_calibration_parsers
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig.cmake
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig-version.cmake
+-- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.xml

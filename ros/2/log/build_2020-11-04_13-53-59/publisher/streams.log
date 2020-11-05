@@ -1,0 +1,32 @@
+[0.027s] Invoking command in '/home/mirella/openvslam/ros/2/build/publisher': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher -- -j12 -l12
+[0.071s] [35m[1mScanning dependencies of target image_publisher[0m
+[0.112s] [ 40%] Built target video_publisher
+[0.112s] [ 60%] [32mBuilding CXX object src/CMakeFiles/image_publisher.dir/image_publisher.cc.o[0m
+[1.424s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.424s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+[1.424s]          [01;31m[Ka[m[K = 100000 + i;
+[1.424s]          [01;31m[K^[m[K
+[1.424s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:64:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+[1.425s]          sprintf([01;31m[Ks[m[K, "%d", a);
+[1.425s]                  [01;31m[K^[m[K
+[1.425s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+[1.425s]          std::string stg_left = ([01;31m[Kframe[m[K.img_path_ + s + extension).c_str();
+[1.425s]                                  [01;31m[K^~~~~[m[K
+[1.426s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kframes[m[K’
+[1.426s]          std::string stg_left = ([01;36m[Kframe[m[K.img_path_ + s + extension).c_str();
+[1.426s]                                  [01;36m[K^~~~~[m[K
+[1.426s]                                  [32m[Kframes[m[K
+[1.426s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kextension[m[K’ was not declared in this scope
+[1.426s]          std::string stg_left = (frame.img_path_ + s + [01;31m[Kextension[m[K).c_str();
+[1.426s]                                                        [01;31m[K^~~~~~~~~[m[K
+[1.428s] [01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:55:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kextern[m[K’
+[1.428s]          std::string stg_left = (frame.img_path_ + s + [01;36m[Kextension[m[K).c_str();
+[1.428s]                                                        [01;36m[K^~~~~~~~~[m[K
+[1.428s]                                                        [32m[Kextern[m[K
+[1.693s] src/CMakeFiles/image_publisher.dir/build.make:62: recipe for target 'src/CMakeFiles/image_publisher.dir/image_publisher.cc.o' failed
+[1.693s] make[2]: *** [src/CMakeFiles/image_publisher.dir/image_publisher.cc.o] Error 1
+[1.694s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/image_publisher.dir/all' failed
+[1.694s] make[1]: *** [src/CMakeFiles/image_publisher.dir/all] Error 2
+[1.694s] make: *** [all] Error 2
+[1.694s] Makefile:140: recipe for target 'all' failed
+[1.697s] Invoked command in '/home/mirella/openvslam/ros/2/build/publisher' returned '2': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher -- -j12 -l12

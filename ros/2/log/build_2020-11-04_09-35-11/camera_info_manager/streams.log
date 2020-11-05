@@ -1,0 +1,52 @@
+[0.016s] Invoking command in '/home/mirella/openvslam/ros/2/build/camera_info_manager': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/camera_info_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/camera_info_manager
+[0.069s] -- The C compiler identification is GNU 7.5.0
+[0.120s] -- The CXX compiler identification is GNU 7.5.0
+[0.124s] -- Check for working C compiler: /usr/bin/cc
+[0.175s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.176s] -- Detecting C compiler ABI info
+[0.230s] -- Detecting C compiler ABI info - done
+[0.234s] -- Detecting C compile features
+[0.400s] -- Detecting C compile features - done
+[0.403s] -- Check for working CXX compiler: /usr/bin/c++
+[0.474s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.474s] -- Detecting CXX compiler ABI info
+[0.535s] -- Detecting CXX compiler ABI info - done
+[0.539s] -- Detecting CXX compile features
+[0.814s] -- Detecting CXX compile features - done
+[0.816s] -- Found ament_cmake_ros: 0.8.0 (/opt/ros/eloquent/share/ament_cmake_ros/cmake)
+[0.849s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.850s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.008s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.029s] -- Found ament_index_cpp: 0.7.2 (/opt/ros/eloquent/share/ament_index_cpp/cmake)
+[1.032s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[1.049s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[1.085s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[1.086s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.086s] -- Looking for pthread.h
+[1.144s] -- Looking for pthread.h - found
+[1.145s] -- Looking for pthread_create
+[1.197s] -- Looking for pthread_create - not found
+[1.197s] -- Looking for pthread_create in pthreads
+[1.245s] -- Looking for pthread_create in pthreads - not found
+[1.245s] -- Looking for pthread_create in pthread
+[1.294s] -- Looking for pthread_create in pthread - found
+[1.295s] -- Found Threads: TRUE  
+[1.324s] -- Found camera_calibration_parsers: 2.2.1 (/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake)
+[1.363s] -- Setting yaml-cpp_DIR to: '/opt/ros/eloquent/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.366s] -- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+[1.390s] -- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+[1.400s] -- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[1.404s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[1.483s] -- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)
+[1.484s] -- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)
+[1.486s] -- Found ament_cmake_lint_cmake: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_lint_cmake/cmake)
+[1.488s] -- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)
+[1.544s] -- Configuring done
+[1.553s] -- Generating done
+[1.554s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/camera_info_manager
+[1.560s] Invoked command in '/home/mirella/openvslam/ros/2/build/camera_info_manager' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/camera_info_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/camera_info_manager
+[1.561s] Invoking command in '/home/mirella/openvslam/ros/2/build/camera_info_manager': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_info_manager -- -j12 -l12
+[1.599s] [35m[1mScanning dependencies of target camera_info_manager[0m
+[1.622s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_info_manager.dir/src/camera_info_manager.cpp.o[0m
+[2.738s] [100%] [32m[1mLinking CXX shared library libcamera_info_manager.so[0m
+[2.872s] [100%] Built target camera_info_manager

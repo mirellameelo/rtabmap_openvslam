@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target image_publisher[0m
+[ 40%] Built target video_publisher
+[ 60%] [32mBuilding CXX object src/CMakeFiles/image_publisher.dir/image_publisher.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+         [01;31m[Ka[m[K = 100000 + i;
+         [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:64:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+         sprintf([01;31m[Ks[m[K, "%d", a);
+                 [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+         std::string stg_left = ([01;31m[Kframe[m[K.img_path_ + s + extension).c_str();
+                                 [01;31m[K^~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kframes[m[K’
+         std::string stg_left = ([01;36m[Kframe[m[K.img_path_ + s + extension).c_str();
+                                 [01;36m[K^~~~~[m[K
+                                 [32m[Kframes[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kextension[m[K’ was not declared in this scope
+         std::string stg_left = (frame.img_path_ + s + [01;31m[Kextension[m[K).c_str();
+                                                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/publisher/src/image_publisher.cc:65:55:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kextern[m[K’
+         std::string stg_left = (frame.img_path_ + s + [01;36m[Kextension[m[K).c_str();
+                                                       [01;36m[K^~~~~~~~~[m[K
+                                                       [32m[Kextern[m[K
+src/CMakeFiles/image_publisher.dir/build.make:62: recipe for target 'src/CMakeFiles/image_publisher.dir/image_publisher.cc.o' failed
+make[2]: *** [src/CMakeFiles/image_publisher.dir/image_publisher.cc.o] Error 1
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/image_publisher.dir/all' failed
+make[1]: *** [src/CMakeFiles/image_publisher.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

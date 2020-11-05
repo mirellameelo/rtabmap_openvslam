@@ -1,0 +1,16 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:140:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::sendTransform(geometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr&)[m[K’
+     odom_broadcaster.sendTransform(odom_trans[01;31m[K)[m[K;
+                                              [01;31m[K^[m[K
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::TransformBroadcaster::sendTransform(const TransformStamped&)
+   void [01;36m[KsendTransform[m[K(const geometry_msgs::msg::TransformStamped & transform);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst TransformStamped& {aka const geometry_msgs::msg::TransformStamped_<std::allocator<void> >&}[m[K’
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:79:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::TransformBroadcaster::sendTransform(const std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&)
+   void [01;36m[KsendTransform[m[K(const std::vector<geometry_msgs::msg::TransformStamped> & transforms);
+        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:79:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&[m[K’
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

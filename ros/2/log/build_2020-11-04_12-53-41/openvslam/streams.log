@@ -1,0 +1,54 @@
+[0.025s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.092s] [35m[1mScanning dependencies of target run_slam[0m
+[0.119s] [ 50%] Built target run_localization
+[0.182s] [ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[5.907s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5)[m[K’:
+[5.907s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:130:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[5.907s]      odom_trans.[01;31m[Kheader[m[K.stamp =  node->now();
+[5.907s]                 [01;31m[K^~~~~~[m[K
+[5.907s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:131:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[5.907s]      odom_trans.[01;31m[Kheader[m[K.frame_id = "odom";
+[5.907s]                 [01;31m[K^~~~~~[m[K
+[5.907s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:132:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kchild_frame_id[m[K’
+[5.907s]      odom_trans.[01;31m[Kchild_frame_id[m[K = "base_link";
+[5.907s]                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.907s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:133:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.907s]      odom_trans.[01;31m[Ktransform[m[K.rotation.x = transform_tf.getRotation().getX();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:134:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.rotation.y = transform_tf.getRotation().getY();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:135:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.rotation.z = transform_tf.getRotation().getZ();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.rotation.w = transform_tf.getRotation().getW();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:137:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.translation.x =  transform_tf.getOrigin().getX();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:138:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.translation.y =  transform_tf.getOrigin().getY();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.908s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:139:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > {aka class std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Ktransform[m[K’
+[5.908s]      odom_trans.[01;31m[Ktransform[m[K.translation.z =  transform_tf.getOrigin().getZ();
+[5.908s]                 [01;31m[K^~~~~~~~~[m[K
+[5.909s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:140:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::sendTransform(geometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr&)[m[K’
+[5.909s]      odom_broadcaster.sendTransform(odom_trans[01;31m[K)[m[K;
+[5.909s]                                               [01;31m[K^[m[K
+[5.909s] In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[5.909s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::TransformBroadcaster::sendTransform(const TransformStamped&)
+[5.909s]    void [01;36m[KsendTransform[m[K(const geometry_msgs::msg::TransformStamped & transform);
+[5.909s]         [01;36m[K^~~~~~~~~~~~~[m[K
+[5.909s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:74:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst TransformStamped& {aka const geometry_msgs::msg::TransformStamped_<std::allocator<void> >&}[m[K’
+[5.909s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:79:8:[m[K [01;36m[Knote: [m[Kcandidate: void tf2_ros::TransformBroadcaster::sendTransform(const std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&)
+[5.909s]    void [01;36m[KsendTransform[m[K(const std::vector<geometry_msgs::msg::TransformStamped> & transforms);
+[5.909s]         [01;36m[K^~~~~~~~~~~~~[m[K
+[5.909s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:79:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<geometry_msgs::msg::TransformStamped_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >&[m[K’
+[11.017s] src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+[11.017s] make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+[11.017s] make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+[11.017s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+[11.017s] make: *** [all] Error 2
+[11.017s] Makefile:140: recipe for target 'all' failed
+[11.019s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '2': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12

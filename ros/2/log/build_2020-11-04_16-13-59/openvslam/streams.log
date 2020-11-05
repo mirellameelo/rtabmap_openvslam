@@ -1,0 +1,63 @@
+[0.027s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.088s] [35m[1mScanning dependencies of target run_slam[0m
+[0.117s] [ 50%] Built target run_localization
+[0.174s] [ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[5.980s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[5.980s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:283:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[5.980s]      rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+[5.980s]                        [01;35m[K^~~~~~~~~~[m[K
+[6.373s] /home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[6.373s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:179:40:[m[K   required from here
+[6.373s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:90:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.373s]  void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+[6.373s]                                   [01;35m[K^~~~~~~~~~~~~[m[K
+[8.620s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0[m[K,
+[8.620s]                  from [01m[K/usr/include/c++/7/bits/allocator.h:46[m[K,
+[8.620s]                  from [01m[K/usr/include/c++/7/string:41[m[K,
+[8.620s]                  from [01m[K/usr/include/c++/7/stdexcept:39[m[K,
+[8.621s]                  from [01m[K/usr/include/c++/7/array:39[m[K,
+[8.621s]                  from [01m[K/home/mirella/openvslam/src/pangolin_viewer/color_scheme.h:4[m[K,
+[8.621s]                  from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:4[m[K,
+[8.621s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[8.621s] /usr/include/c++/7/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = tf2_ros::TransformBroadcaster; _Args = {}; _Tp = tf2_ros::TransformBroadcaster][m[K’:
+[8.621s] [01m[K/usr/include/c++/7/bits/alloc_traits.h:475:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = tf2_ros::TransformBroadcaster; _Args = {}; _Tp = tf2_ros::TransformBroadcaster; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<tf2_ros::TransformBroadcaster>][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr_base.h:526:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = tf2_ros::TransformBroadcaster; _Alloc = std::allocator<tf2_ros::TransformBroadcaster>; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr_base.h:637:4:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(std::_Sp_make_shared_tag, _Tp*, const _Alloc&, _Args&& ...) [with _Tp = tf2_ros::TransformBroadcaster; _Alloc = std::allocator<tf2_ros::TransformBroadcaster>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr_base.h:1295:35:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<tf2_ros::TransformBroadcaster>; _Args = {}; _Tp = tf2_ros::TransformBroadcaster; __gnu_cxx::_Lock_policy _Lp = (__gnu_cxx::_Lock_policy)2][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr.h:344:64:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...) [with _Alloc = std::allocator<tf2_ros::TransformBroadcaster>; _Args = {}; _Tp = tf2_ros::TransformBroadcaster][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr.h:690:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = tf2_ros::TransformBroadcaster; _Alloc = std::allocator<tf2_ros::TransformBroadcaster>; _Args = {}][m[K’
+[8.621s] [01m[K/usr/include/c++/7/bits/shared_ptr.h:706:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = tf2_ros::TransformBroadcaster; _Args = {}][m[K’
+[8.621s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:73:73:[m[K   required from here
+[8.621s] [01m[K/usr/include/c++/7/ext/new_allocator.h:136:4:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster()[m[K’
+[8.621s]   { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.621s]     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.621s] In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[8.621s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:53:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class NodeT, class AllocatorT> tf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+[8.622s]    [01;36m[KTransformBroadcaster[m[K(
+[8.622s]    [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.622s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:53:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[8.622s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0[m[K,
+[8.622s]                  from [01m[K/usr/include/c++/7/bits/allocator.h:46[m[K,
+[8.622s]                  from [01m[K/usr/include/c++/7/string:41[m[K,
+[8.622s]                  from [01m[K/usr/include/c++/7/stdexcept:39[m[K,
+[8.622s]                  from [01m[K/usr/include/c++/7/array:39[m[K,
+[8.622s]                  from [01m[K/home/mirella/openvslam/src/pangolin_viewer/color_scheme.h:4[m[K,
+[8.622s]                  from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:4[m[K,
+[8.622s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[8.622s] [01m[K/usr/include/c++/7/ext/new_allocator.h:136:4:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[8.622s]   { [01;36m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[8.622s]     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.622s] In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[8.622s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: tf2_ros::TransformBroadcaster::TransformBroadcaster(const tf2_ros::TransformBroadcaster&)
+[8.622s]  class [01;36m[KTransformBroadcaster[m[K{
+[8.622s]        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.622s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[8.623s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: tf2_ros::TransformBroadcaster::TransformBroadcaster(tf2_ros::TransformBroadcaster&&)
+[8.623s] [01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[11.013s] make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+[11.014s] src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+[11.014s] make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+[11.014s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+[11.014s] Makefile:140: recipe for target 'all' failed
+[11.014s] make: *** [all] Error 2
+[11.015s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '2': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12

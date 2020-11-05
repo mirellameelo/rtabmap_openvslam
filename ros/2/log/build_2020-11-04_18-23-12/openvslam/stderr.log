@@ -1,0 +1,31 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+     auto timer = rclcpp[01;31m[K.[m[KTimer(rclcpp.Duration(1), demo_callback())
+                        [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+     auto timer = rclcpp.Timer(rclcpp[01;31m[K.[m[KDuration(1), demo_callback())
+                                     [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kdemo_callback[m[K’ was not declared in this scope
+     auto timer = rclcpp.Timer(rclcpp.Duration(1), [01;31m[Kdemo_callback[m[K())
+                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:51:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcallback[m[K’
+     auto timer = rclcpp.Timer(rclcpp.Duration(1), [01;36m[Kdemo_callback[m[K())
+                                                   [01;36m[K^~~~~~~~~~~~~[m[K
+                                                   [32m[Kcallback[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:381:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Keval_log[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool [01;35m[Keval_log[m[K, const std::string& map_db_path) {
+                                                                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmap_db_path[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ std::string& mask_img_path, const bool eval_log, const std::string& [01;35m[Kmap_db_path[m[K) {
+                                                                     [01;35m[K^~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:187:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:96:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

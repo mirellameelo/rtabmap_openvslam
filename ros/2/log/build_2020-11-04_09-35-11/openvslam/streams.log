@@ -1,0 +1,68 @@
+[0.016s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam
+[0.080s] -- The CXX compiler identification is GNU 7.5.0
+[0.112s] -- The C compiler identification is GNU 7.5.0
+[0.115s] -- Check for working CXX compiler: /usr/bin/c++
+[0.180s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.181s] -- Detecting CXX compiler ABI info
+[0.252s] -- Detecting CXX compiler ABI info - done
+[0.256s] -- Detecting CXX compile features
+[0.525s] -- Detecting CXX compile features - done
+[0.526s] -- Check for working C compiler: /usr/bin/cc
+[0.587s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.588s] -- Detecting C compiler ABI info
+[0.644s] -- Detecting C compiler ABI info - done
+[0.648s] -- Detecting C compile features
+[0.825s] -- Detecting C compile features - done
+[0.826s] -- Root directory of OpenVSLAM: /home/mirella/openvslam
+[0.826s] -- Source directory of OpenVSLAM: /home/mirella/openvslam/src
+[0.826s] -- Library directory of OpenVSLAM: /home/mirella/openvslam/build/lib
+[0.826s] -- Build type: Release
+[0.826s] -- Address/Memory sanitizer: DISABLED
+[0.826s] -- Stack trace logger: DISABLED
+[0.826s] -- Google Perftools: DISABLED
+[0.826s] -- Architecture-aware optimization (-march=native): DISABLED
+[0.827s] -- Performing Test COMPILER_SUPPORTS_CXX17
+[0.893s] -- Performing Test COMPILER_SUPPORTS_CXX17 - Success
+[0.894s] -- Performing Test COMPILER_SUPPORTS_CXX14
+[0.957s] -- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+[0.958s] -- Performing Test COMPILER_SUPPORTS_CXX11
+[1.028s] -- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+[1.028s] -- Performing Test COMPILER_SUPPORTS_CXX0X
+[1.094s] -- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+[1.094s] -- C++11 support: OK (-std=c++17)
+[1.095s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[1.119s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.119s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.264s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.289s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[1.305s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[1.340s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[1.341s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.342s] -- Looking for pthread.h
+[1.397s] -- Looking for pthread.h - found
+[1.397s] -- Looking for pthread_create
+[1.461s] -- Looking for pthread_create - not found
+[1.461s] -- Looking for pthread_create in pthreads
+[1.503s] -- Looking for pthread_create in pthreads - not found
+[1.503s] -- Looking for pthread_create in pthread
+[1.557s] -- Looking for pthread_create in pthread - found
+[1.557s] -- Found Threads: TRUE  
+[1.592s] -- Found cv_bridge: 2.2.1 (/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake)
+[1.599s] -- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+[1.644s] -- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+[1.656s] -- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[1.661s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[1.673s] -- Use OpenCV 3.4.0
+[1.676s] -- Found Eigen3: /usr/local/include/eigen3 (Required is at least version "3.3") 
+[1.682s] -- BoW framework: DBoW2 (found in /usr/local/include)
+[1.682s] -- Viewer for examples: pangolin viewer
+[1.781s] CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+[1.781s] Please set them or make sure they are set and tested correctly in the CMake files:
+[1.781s] Pangolin_Viewer_LIB
+[1.781s]     linked by target "run_slam" in directory /home/mirella/openvslam/ros/2/src/openvslam/src
+[1.781s]     linked by target "run_localization" in directory /home/mirella/openvslam/ros/2/src/openvslam/src
+[1.781s] 
+[1.781s] -- Configuring incomplete, errors occurred!
+[1.782s] See also "/home/mirella/openvslam/ros/2/build/openvslam/CMakeFiles/CMakeOutput.log".
+[1.782s] See also "/home/mirella/openvslam/ros/2/build/openvslam/CMakeFiles/CMakeError.log".
+[1.785s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '1': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam

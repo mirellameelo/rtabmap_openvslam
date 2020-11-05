@@ -1,0 +1,7 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:42:10:[m[K [01;31m[Kfatal error: [m[Ktf2/transform_broadcaster.h: Arquivo ou diretório inexistente
+ #include [01;31m[K<tf2/transform_broadcaster.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

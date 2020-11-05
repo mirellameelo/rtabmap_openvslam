@@ -1,0 +1,10 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:253:67:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Ktf2_ros::StaticTransformBroadcaster tf_broadcaster[m[K’
+     static tf2_ros::StaticTransformBroadcaster tf_broadcaster(node[01;31m[K)[m[K;
+                                                                   [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:251:58:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_broadcaster[m[K’
+     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> [01;36m[Ktf_broadcaster[m[K;
+                                                          [01;36m[K^~~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

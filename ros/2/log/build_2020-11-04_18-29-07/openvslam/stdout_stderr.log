@@ -1,0 +1,50 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+In file included from [01m[K/usr/include/boost/bind.hpp:22:0[m[K,
+                 from [01m[K/usr/include/boost/thread/detail/thread.hpp:30[m[K,
+                 from [01m[K/usr/include/boost/thread/thread_only.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/thread/thread.hpp:12[m[K,
+                 from [01m[K/usr/include/boost/thread.hpp:13[m[K,
+                 from [01m[K/usr/include/pcl-1.8/pcl/io/boost.h:51[m[K,
+                 from [01m[K/usr/include/pcl-1.8/pcl/io/file_io.h:43[m[K,
+                 from [01m[K/usr/include/pcl-1.8/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/opt/ros/eloquent/include/pcl_conversions/pcl_conversions.h:72[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:44[m[K:
+/usr/include/boost/bind/bind.hpp: In instantiation of ‘[01m[Kstruct boost::_bi::result_traits<boost::_bi::unspecified, void (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)>[m[K’:
+[01m[K/usr/include/boost/bind/bind.hpp:1284:48:[m[K   required from ‘[01m[Kclass boost::_bi::bind_t<boost::_bi::unspecified, void (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>), boost::_bi::list0>[m[K’
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:44:[m[K   required from here
+[01m[K/usr/include/boost/bind/bind.hpp:75:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’ is not a class, struct, or union type
+     typedef typename F::result_type [01;31m[Ktype[m[K;
+                                     [01;31m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:13:[m[K [01;31m[Kerror: [m[K‘[01m[KWallTime[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+     rclcpp::[01;31m[KWallTime[m[K<std::function<void()>>(0.2,my_callback);
+             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KWallTimer[m[K’
+     rclcpp::[01;36m[KWallTime[m[K<std::function<void()>>(0.2,my_callback);
+             [01;36m[K^~~~~~~~[m[K
+             [32m[KWallTimer[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     rclcpp::WallTime<std::function<void()[01;31m[K>>[m[K(0.2,my_callback);
+                                          [01;31m[K^~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:49:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+     rclcpp::WallTime<std::function<void()>>(0.2,[01;35m[Kmy_callback[m[K);
+                                                 [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Keval_log[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool [01;35m[Keval_log[m[K, const std::string& map_db_path) {
+                                                                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmap_db_path[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ std::string& mask_img_path, const bool eval_log, const std::string& [01;35m[Kmap_db_path[m[K) {
+                                                                     [01;35m[K^~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:187:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:96:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

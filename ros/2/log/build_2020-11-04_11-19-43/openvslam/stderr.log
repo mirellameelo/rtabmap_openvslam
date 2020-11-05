@@ -1,0 +1,25 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, openvslam::system*)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:64:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_image_msg_sub[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& [01;35m[Kleft_image_msg_sub[m[K,
+                                                              [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:65:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSLAM[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+             openvslam::system* [01;35m[KSLAM[m[K){
+                                [01;35m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:110:91:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::Image>(const char [3], rmw_qos_profile_t&)[m[K’
+     auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/l", custom_qos[01;31m[K)[m[K;
+                                                                                           [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:179:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+   [01;36m[Kcreate_publisher[m[K(
+   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:179:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:110:91:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kcustom_qos[m[K’ (type ‘[01m[Krmw_qos_profile_t[m[K’) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+     auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/l", custom_qos[01;36m[K)[m[K;
+                                                                                           [01;36m[K^[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

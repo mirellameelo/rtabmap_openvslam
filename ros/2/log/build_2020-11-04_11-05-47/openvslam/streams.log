@@ -1,0 +1,112 @@
+[0.034s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.085s] [35m[1mScanning dependencies of target run_slam[0m
+[0.130s] [ 50%] Built target run_localization
+[0.180s] [ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[4.087s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[4.087s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:64:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_image_msg_sub[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.087s]  void callback(const sensor_msgs::msg::Image::ConstSharedPtr& [01;35m[Kleft_image_msg_sub[m[K,
+[4.087s]                                                               [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.087s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:66:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.087s]                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+[4.087s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.087s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:67:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.087s]                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+[4.087s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[4.087s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:68:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.087s]          std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kleft_publisher_config[m[K,
+[4.087s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.088s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:69:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.088s]          std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kright_publisher_config[m[K,
+[4.088s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.088s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:70:123:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.088s]                std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void>>> [01;35m[Kodometry_publisher[m[K,
+[4.088s]                                                                                                                          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.088s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:71:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSLAM[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.088s]                  openvslam::system* [01;35m[KSLAM[m[K,
+[4.088s]                                     [01;35m[K^~~~[m[K
+[4.088s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:72:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmask[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.088s]                  const cv::Mat [01;35m[Kmask[m[K,
+[4.088s]                                [01;35m[K^~~~[m[K
+[4.089s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:73:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.089s]                  std::shared_ptr<rclcpp::Node> [01;35m[Knode[m[K
+[4.089s]                                                [01;35m[K^~~~[m[K
+[4.095s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[4.095s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:107:23:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krmw_qos_profile_t custom_qos[m[K’
+[4.095s]      rmw_qos_profile_t [01;31m[Kcustom_qos[m[K = rmw_qos_profile_default;
+[4.096s]                        [01;31m[K^~~~~~~~~~[m[K
+[4.096s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:102:23:[m[K [01;36m[Knote: [m[K‘[01m[Krmw_qos_profile_t custom_qos[m[K’ previously declared here
+[4.096s]      rmw_qos_profile_t [01;36m[Kcustom_qos[m[K = rmw_qos_profile_default;
+[4.096s]                        [01;36m[K^~~~~~~~~~[m[K
+[4.096s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:109:93:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::Image>(const char [17])[m[K’
+[4.096s]      auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect"[01;31m[K)[m[K;
+[4.096s]                                                                                              [01;31m[K^[m[K
+[4.096s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:1111:0[m[K,
+[4.096s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.096s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[4.096s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[4.096s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[4.096s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+[4.096s]  [01;36m[KNode[m[K::create_publisher(
+[4.096s]  [01;36m[K^~~~[m[K
+[4.096s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.097s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:109:93:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[4.097s]      auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect"[01;36m[K)[m[K;
+[4.097s]                                                                                              [01;36m[K^[m[K
+[4.097s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:110:95:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::Image>(const char [18])[m[K’
+[4.097s]      auto right_publisher = node->create_publisher<sensor_msgs::msg::Image>("/right/image_rect"[01;31m[K)[m[K;
+[4.097s]                                                                                                [01;31m[K^[m[K
+[4.097s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:1111:0[m[K,
+[4.097s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.097s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[4.097s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[4.097s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[4.097s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+[4.097s]  [01;36m[KNode[m[K::create_publisher(
+[4.097s]  [01;36m[K^~~~[m[K
+[4.097s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.097s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:110:95:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[4.097s]      auto right_publisher = node->create_publisher<sensor_msgs::msg::Image>("/right/image_rect"[01;36m[K)[m[K;
+[4.098s]                                                                                                [01;36m[K^[m[K
+[4.098s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:111:106:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::CameraInfo>(const char [18])[m[K’
+[4.098s]      auto left_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/left/camera_info"[01;31m[K)[m[K;
+[4.098s]                                                                                                           [01;31m[K^[m[K
+[4.098s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:1111:0[m[K,
+[4.098s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.098s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[4.098s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[4.098s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[4.098s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+[4.098s]  [01;36m[KNode[m[K::create_publisher(
+[4.098s]  [01;36m[K^~~~[m[K
+[4.098s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.098s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:111:106:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[4.098s]      auto left_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/left/camera_info"[01;36m[K)[m[K;
+[4.098s]                                                                                                           [01;36m[K^[m[K
+[4.098s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:112:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::CameraInfo>(const char [19])[m[K’
+[4.099s]      auto right_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/right/camera_info"[01;31m[K)[m[K;
+[4.099s]                                                                                                             [01;31m[K^[m[K
+[4.099s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:1111:0[m[K,
+[4.099s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.099s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[4.099s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[4.099s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[4.099s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+[4.099s]  [01;36m[KNode[m[K::create_publisher(
+[4.099s]  [01;36m[K^~~~[m[K
+[4.099s] [01m[K/opt/ros/eloquent/include/rclcpp/node_impl.hpp:69:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.099s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:112:108:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[4.099s]      auto right_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/right/camera_info"[01;36m[K)[m[K;
+[4.099s]                                                                                                             [01;36m[K^[m[K
+[4.099s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:113:10:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto odometry_publisher[m[K’
+[4.099s]      auto [01;31m[Kodometry_publisher[m[K = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 100);
+[4.100s]           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.100s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:104:10:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > > odometry_publisher[m[K’
+[4.100s]      auto [01;36m[Kodometry_publisher[m[K = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 100);
+[4.100s]           [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.382s] make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+[8.382s] src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+[8.383s] make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+[8.383s] make: *** [all] Error 2
+[8.383s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+[8.383s] Makefile:140: recipe for target 'all' failed
+[8.385s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '2': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12

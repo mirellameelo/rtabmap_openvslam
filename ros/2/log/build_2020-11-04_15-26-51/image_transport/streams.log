@@ -1,0 +1,75 @@
+[0.021s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport -- -j12 -l12
+[0.081s] [  6%] Built target gtest
+[0.082s] [ 13%] Built target gtest_main
+[0.098s] [ 40%] Built target image_transport
+[0.149s] [ 46%] Built target image_transport_plugins
+[0.151s] [ 53%] Built target image_transport-camera_common
+[0.155s] [ 60%] Built target republish
+[0.155s] [ 66%] Built target image_transport-publisher
+[0.156s] [ 73%] Built target image_transport-single_subscriber_publisher
+[0.156s] [ 80%] Built target image_transport-remapping
+[0.156s] [ 86%] Built target image_transport-message_passing
+[0.159s] [ 93%] Built target image_transport-subscriber
+[0.160s] [100%] Built target list_transports
+[0.171s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport -- -j12 -l12
+[0.240s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport --target install -- -j12 -l12
+[0.307s] [  6%] Built target gtest_main
+[0.308s] [ 13%] Built target gtest
+[0.329s] [ 40%] Built target image_transport
+[0.377s] [ 53%] Built target image_transport-publisher
+[0.378s] [ 53%] Built target list_transports
+[0.378s] [ 60%] Built target image_transport-remapping
+[0.379s] [ 66%] Built target image_transport-message_passing
+[0.379s] [ 73%] Built target image_transport_plugins
+[0.380s] [ 80%] Built target image_transport-camera_common
+[0.380s] [ 86%] Built target image_transport-subscriber
+[0.386s] [ 93%] Built target republish
+[0.387s] [100%] Built target image_transport-single_subscriber_publisher
+[0.407s] [36mInstall the project...[0m
+[0.420s] -- Install configuration: ""
+[0.420s] -- Execute custom install script
+[0.420s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport//default_plugins.xml
+[0.420s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/lib/libimage_transport.so
+[0.421s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/lib/libimage_transport_plugins.so
+[0.421s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/lib/image_transport/list_transports
+[0.421s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/lib/image_transport/republish
+[0.421s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/camera_common.h
+[0.422s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/camera_publisher.h
+[0.422s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/camera_subscriber.h
+[0.422s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/exception.h
+[0.422s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/image_transport.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/loader_fwds.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/publisher.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/publisher_plugin.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/raw_publisher.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/raw_subscriber.h
+[0.423s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/simple_publisher_plugin.h
+[0.424s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/simple_subscriber_plugin.h
+[0.424s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/single_subscriber_publisher.h
+[0.425s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/subscriber.h
+[0.425s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/subscriber_filter.h
+[0.425s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/subscriber_plugin.h
+[0.426s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/transport_hints.h
+[0.426s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/include/image_transport/visibility_control.hpp
+[0.426s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/library_path.sh
+[0.426s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/library_path.dsv
+[0.427s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/ament_index/resource_index/package_run_dependencies/image_transport
+[0.428s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/ament_index/resource_index/parent_prefix_path/image_transport
+[0.428s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/ament_prefix_path.sh
+[0.428s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/ament_prefix_path.dsv
+[0.429s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/path.sh
+[0.430s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/environment/path.dsv
+[0.430s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/local_setup.bash
+[0.430s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/local_setup.sh
+[0.430s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/local_setup.zsh
+[0.430s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/local_setup.dsv
+[0.431s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.dsv
+[0.438s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/ament_index/resource_index/packages/image_transport
+[0.438s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/ament_index/resource_index/image_transport__pluginlib__plugin/image_transport
+[0.438s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.438s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake/ament_cmake_export_libraries-extras.cmake
+[0.438s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.439s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake/image_transportConfig.cmake
+[0.439s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake/image_transportConfig-version.cmake
+[0.439s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.xml
+[0.464s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport --target install -- -j12 -l12

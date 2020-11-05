@@ -1,0 +1,4 @@
+Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12
+Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12

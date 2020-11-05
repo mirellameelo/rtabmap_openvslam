@@ -1,0 +1,49 @@
+[0.024s] Invoking command in '/home/mirella/openvslam/ros/2/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge -- -j12 -l12
+[0.080s] [ 12%] Built target gtest_main
+[0.080s] [ 25%] Built target gtest
+[0.094s] [ 43%] Built target cv_bridge
+[0.135s] [ 62%] Built target cv_bridge_boost
+[0.150s] [100%] Built target cv_bridge-utest
+[0.172s] Invoked command in '/home/mirella/openvslam/ros/2/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge -- -j12 -l12
+[0.211s] Invoking command in '/home/mirella/openvslam/ros/2/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge --target install -- -j12 -l12
+[0.270s] [ 12%] Built target gtest_main
+[0.275s] [ 25%] Built target gtest
+[0.285s] [ 43%] Built target cv_bridge
+[0.324s] [ 62%] Built target cv_bridge_boost
+[0.329s] [100%] Built target cv_bridge-utest
+[0.349s] [36mInstall the project...[0m
+[0.359s] -- Install configuration: ""
+[0.359s] -- Execute custom install script
+[0.360s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[0.360s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[0.361s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages/cv_bridge/__init__.py
+[0.361s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages/cv_bridge/core.py
+[0.361s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/lib/libcv_bridge.so
+[0.362s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/include/cv_bridge/cv_bridge_export.h
+[0.362s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages/cv_bridge/boost//cv_bridge_boost.so
+[0.363s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/library_path.sh
+[0.363s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/library_path.dsv
+[0.364s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/include/cv_bridge/cv_bridge.h
+[0.364s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/include/cv_bridge/rgb_colors.h
+[0.364s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[0.365s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[0.365s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[0.366s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[0.366s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/path.sh
+[0.366s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[0.366s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/local_setup.bash
+[0.367s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/local_setup.sh
+[0.367s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[0.367s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[0.368s] -- Symlinking: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.dsv
+[0.386s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[0.387s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[0.387s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.387s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.387s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[0.388s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[0.388s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[0.389s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.xml
+[0.442s] Listing '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages/cv_bridge'...
+[0.443s] Listing '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages/cv_bridge/boost'...
+[0.466s] Invoked command in '/home/mirella/openvslam/ros/2/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge --target install -- -j12 -l12

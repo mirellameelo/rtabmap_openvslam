@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:252:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster[m[K’ was not declared in this scope
+     [01;31m[Ktf_broadcaster[m[K = std::make_shared<tf2_ros::StaticTransformBroadcaster>(node);
+     [01;31m[K^~~~~~~~~~~~~~[m[K
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

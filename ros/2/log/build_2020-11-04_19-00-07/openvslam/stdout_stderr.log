@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:325:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_wall_timer(double, boost::_bi::bind_t<void, void (*)(), boost::_bi::list0>)[m[K’
+     node->create_wall_timer(0.2,  boost::bind(&callback_time)[01;31m[K)[m[K;
+                                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:227:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::callback_group::CallbackGroup::SharedPtr)
+   [01;36m[Kcreate_wall_timer[m[K(
+   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:227:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:325:62:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kdouble[m[K’
+     node->create_wall_timer(0.2,  boost::bind(&callback_time)[01;36m[K)[m[K;
+                                                              [01;36m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Keval_log[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool [01;35m[Keval_log[m[K, const std::string& map_db_path) {
+                                                                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmap_db_path[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool eval_log, const std::string& [01;35m[Kmap_db_path[m[K) {
+                                                                                              [01;35m[K^~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:187:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:96:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

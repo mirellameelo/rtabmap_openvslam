@@ -1,0 +1,294 @@
+[0.019s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam
+[0.033s] -- Root directory of OpenVSLAM: /home/mirella/openvslam
+[0.033s] -- Source directory of OpenVSLAM: /home/mirella/openvslam/src
+[0.034s] -- Library directory of OpenVSLAM: /home/mirella/openvslam/build/lib
+[0.034s] -- Build type: Release
+[0.034s] -- Address/Memory sanitizer: DISABLED
+[0.034s] -- Stack trace logger: DISABLED
+[0.034s] -- Google Perftools: DISABLED
+[0.034s] -- Architecture-aware optimization (-march=native): DISABLED
+[0.034s] -- C++11 support: OK (-std=c++17)
+[0.035s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.056s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.205s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.222s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.254s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.255s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.279s] -- Found cv_bridge: 2.1.4 (/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake)
+[0.286s] -- Found tf2_ros: 0.12.5 (/opt/ros/eloquent/share/tf2_ros/cmake)
+[0.341s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.350s] -- Found visualization_msgs: 0.8.1 (/opt/ros/eloquent/share/visualization_msgs/cmake)
+[0.359s] -- Found pcl_conversions: 2.1.0 (/opt/ros/eloquent/share/pcl_conversions/cmake)
+[0.412s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.421s] -- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+[0.447s] -- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+[0.459s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[0.492s] -- Boost version: 1.65.1
+[0.492s] -- Found the following Boost libraries:
+[0.492s] --   system
+[0.525s] -- Boost version: 1.65.1
+[0.525s] -- Found the following Boost libraries:
+[0.525s] --   system
+[0.525s] --   filesystem
+[0.525s] --   thread
+[0.525s] --   date_time
+[0.525s] --   iostreams
+[0.525s] --   serialization
+[0.525s] --   chrono
+[0.525s] --   atomic
+[0.525s] --   regex
+[0.534s] -- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+[0.535s] ** WARNING ** io features related to ensenso will be disabled
+[0.536s] -- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+[0.537s] ** WARNING ** io features related to davidSDK will be disabled
+[0.537s] -- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+[0.537s] ** WARNING ** io features related to dssdk will be disabled
+[0.537s] ** WARNING ** io features related to pcap will be disabled
+[0.537s] ** WARNING ** io features related to png will be disabled
+[0.589s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0.589s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0.589s] but this file does not exist.  Possible reasons include:
+[0.589s] * The file was deleted, renamed, or moved to another location.
+[0.589s] * An install or uninstall procedure did not complete successfully.
+[0.589s] * The installation package was faulty and contained
+[0.589s]    "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+[0.590s] but not all the files it references.
+[0.590s] 
+[0.590s] -- The imported target "vtk" references the file
+[0.590s]    "/usr/bin/vtk"
+[0.590s] but this file does not exist.  Possible reasons include:
+[0.590s] * The file was deleted, renamed, or moved to another location.
+[0.590s] * An install or uninstall procedure did not complete successfully.
+[0.590s] * The installation package was faulty and contained
+[0.590s]    "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+[0.590s] but not all the files it references.
+[0.590s] 
+[0.662s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[0.693s] -- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+[0.693s] ** WARNING ** visualization features related to ensenso will be disabled
+[0.697s] -- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+[0.697s] ** WARNING ** visualization features related to davidSDK will be disabled
+[0.697s] -- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+[0.697s] ** WARNING ** visualization features related to dssdk will be disabled
+[0.698s] -- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) 
+[0.698s] ** WARNING ** visualization features related to rssdk will be disabled
+[0.743s] -- looking for PCL_COMMON
+[0.743s] -- looking for PCL_OCTREE
+[0.744s] -- looking for PCL_IO
+[0.745s] -- looking for PCL_KDTREE
+[0.745s] -- looking for PCL_SEARCH
+[0.745s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.746s] -- looking for PCL_FILTERS
+[0.747s] -- looking for PCL_2D
+[0.747s] -- looking for PCL_GEOMETRY
+[0.747s] -- looking for PCL_FEATURES
+[0.748s] -- looking for PCL_ML
+[0.748s] -- looking for PCL_SEGMENTATION
+[0.749s] -- looking for PCL_VISUALIZATION
+[0.750s] -- looking for PCL_SURFACE
+[0.750s] -- looking for PCL_REGISTRATION
+[0.751s] -- looking for PCL_KEYPOINTS
+[0.751s] -- looking for PCL_TRACKING
+[0.752s] -- looking for PCL_RECOGNITION
+[0.753s] -- looking for PCL_STEREO
+[0.753s] -- looking for PCL_APPS
+[0.756s] -- looking for PCL_IN_HAND_SCANNER
+[0.756s] -- looking for PCL_MODELER
+[0.756s] -- looking for PCL_POINT_CLOUD_EDITOR
+[0.757s] -- looking for PCL_OUTOFCORE
+[0.757s] -- looking for PCL_PEOPLE
+[0.783s] -- Use OpenCV 3.4.0
+[0.788s] -- BoW framework: DBoW2 (found in /usr/local/include)
+[0.791s] -- Viewer for examples: pangolin viewer
+[1.427s] -- Configuring done
+[1.505s] -- Generating done
+[1.507s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/openvslam
+[1.515s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam
+[1.516s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[1.555s] [35m[1mScanning dependencies of target run_slam[0m
+[1.579s] [ 25%] [32m[1mLinking CXX executable run_localization[0m
+[1.630s] [ 50%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[2.419s] [ 75%] Built target run_localization
+[7.209s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5)[m[K’:
+[7.209s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:117:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.209s]      odom_msg_.[01;31m[Kheader[m[K.stamp = node->now();
+[7.210s]                [01;31m[K^~~~~~[m[K
+[7.210s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:118:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.210s]      odom_msg_.[01;31m[Kheader[m[K.frame_id = "odom";
+[7.210s]                [01;31m[K^~~~~~[m[K
+[7.210s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:119:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kchild_frame_id[m[K’
+[7.210s]      odom_msg_.[01;31m[Kchild_frame_id[m[K = "base_link";
+[7.210s]                [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.210s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:120:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.210s]      odom_msg_.[01;31m[Kpose[m[K.pose.orientation.x = transform_tf.getRotation().getX();
+[7.210s]                [01;31m[K^~~~[m[K
+[7.210s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:121:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.orientation.y = transform_tf.getRotation().getY();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.211s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:122:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.orientation.z = transform_tf.getRotation().getZ();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.211s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:123:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.orientation.w = transform_tf.getRotation().getW();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.211s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:124:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.position.x = transform_tf.getOrigin().getX();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.211s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:125:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.position.y = transform_tf.getOrigin().getY();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.211s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:126:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+[7.211s]      odom_msg_.[01;31m[Kpose[m[K.pose.position.z = transform_tf.getOrigin().getZ();
+[7.211s]                [01;31m[K^~~~[m[K
+[7.227s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[7.228s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:179:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.228s]          left_image_msg->header.stamp = odom_msg_.[01;31m[Kheader[m[K.stamp;
+[7.228s]                                                   [01;31m[K^~~~~~[m[K
+[7.228s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:186:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.228s]          right_image_msg->header.stamp = odom_msg_.[01;31m[Kheader[m[K.stamp;
+[7.228s]                                                    [01;31m[K^~~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:189:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.229s]          left_config.[01;31m[Kheader[m[K.stamp = odom_msg_.header.stamp;
+[7.229s]                      [01;31m[K^~~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:189:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.229s]          left_config.header.stamp = odom_msg_.[01;31m[Kheader[m[K.stamp;
+[7.229s]                                               [01;31m[K^~~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:190:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.229s]          left_config.[01;31m[Kheader[m[K.frame_id = "camera_link";
+[7.229s]                      [01;31m[K^~~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:191:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kwidth[m[K’
+[7.229s]          left_config.[01;31m[Kwidth[m[K = left_image_msg->width;
+[7.229s]                      [01;31m[K^~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:192:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheight[m[K’
+[7.229s]          left_config.[01;31m[Kheight[m[K = left_image_msg->height;
+[7.229s]                      [01;31m[K^~~~~~[m[K
+[7.229s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:193:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kk[m[K’
+[7.230s]          left_config.[01;31m[Kk[m[K = K0;
+[7.230s]                      [01;31m[K^[m[K
+[7.230s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:194:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kd[m[K’
+[7.230s]          left_config.[01;31m[Kd[m[K = d0;
+[7.230s]                      [01;31m[K^[m[K
+[7.230s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:195:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kr[m[K’
+[7.230s]          left_config.[01;31m[Kr[m[K = R0;
+[7.230s]                      [01;31m[K^[m[K
+[7.230s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:196:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kp[m[K’
+[7.230s]          left_config.[01;31m[Kp[m[K = P0;
+[7.230s]                      [01;31m[K^[m[K
+[7.230s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:197:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kdistortion_model[m[K’
+[7.230s]          left_config.[01;31m[Kdistortion_model[m[K = "plumb_bob";
+[7.230s]                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.230s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:200:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.230s]          right_config.[01;31m[Kheader[m[K.stamp = odom_msg_.header.stamp;
+[7.230s]                       [01;31m[K^~~~~~[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:200:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > > {aka class std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.231s]          right_config.header.stamp = odom_msg_.[01;31m[Kheader[m[K.stamp;
+[7.231s]                                                [01;31m[K^~~~~~[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:201:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheader[m[K’
+[7.231s]          right_config.[01;31m[Kheader[m[K.frame_id = "camera_link";
+[7.231s]                       [01;31m[K^~~~~~[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:202:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kwidth[m[K’
+[7.231s]          right_config.[01;31m[Kwidth[m[K = right_image_msg->width;
+[7.231s]                       [01;31m[K^~~~~[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:203:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kheight[m[K’
+[7.231s]          right_config.[01;31m[Kheight[m[K = right_image_msg->height;
+[7.231s]                       [01;31m[K^~~~~~[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:204:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kk[m[K’
+[7.231s]          right_config.[01;31m[Kk[m[K = K1;
+[7.231s]                       [01;31m[K^[m[K
+[7.231s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:205:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kd[m[K’
+[7.231s]          right_config.[01;31m[Kd[m[K = d1;
+[7.232s]                       [01;31m[K^[m[K
+[7.232s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:206:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kr[m[K’
+[7.232s]          right_config.[01;31m[Kr[m[K = R1;
+[7.232s]                       [01;31m[K^[m[K
+[7.232s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:207:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kp[m[K’
+[7.232s]          right_config.[01;31m[Kp[m[K = P1;
+[7.232s]                       [01;31m[K^[m[K
+[7.232s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:208:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > {aka class std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kdistortion_model[m[K’
+[7.232s]          right_config.[01;31m[Kdistortion_model[m[K = "plumb_bob";
+[7.232s]                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.243s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:214:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> >::publish(sensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr&)[m[K’
+[7.243s]          right_publisher_config->publish(right_config[01;31m[K)[m[K;
+[7.243s]                                                      [01;31m[K^[m[K
+[7.243s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+[7.243s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:53[m[K,
+[7.243s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.244s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[7.244s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[7.244s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >]
+[7.244s]    [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+[7.244s]    [01;36m[K^~~~~~~[m[K
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > >[m[K’
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.244s]    [01;36m[Kpublish[m[K(const MessageT & msg)
+[7.244s]    [01;36m[K^~~~~~~[m[K
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst sensor_msgs::msg::CameraInfo_<std::allocator<void> >&[m[K’
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+[7.244s]    [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[7.244s]    [01;36m[K^~~~~~~[m[K
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[7.244s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.245s]    [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+[7.245s]    [01;36m[K^~~~~~~[m[K
+[7.245s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[7.245s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:215:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> >::publish(sensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr&)[m[K’
+[7.245s]          left_publisher_config->publish(left_config[01;31m[K)[m[K;
+[7.245s]                                                    [01;31m[K^[m[K
+[7.245s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+[7.245s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:53[m[K,
+[7.245s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.245s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[7.245s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[7.245s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[7.245s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >]
+[7.245s]    [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+[7.245s]    [01;36m[K^~~~~~~[m[K
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kstd::unique_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::default_delete<sensor_msgs::msg::CameraInfo_<std::allocator<void> > > >[m[K’
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.246s]    [01;36m[Kpublish[m[K(const MessageT & msg)
+[7.246s]    [01;36m[K^~~~~~~[m[K
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst sensor_msgs::msg::CameraInfo_<std::allocator<void> >&[m[K’
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+[7.246s]    [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[7.246s]    [01;36m[K^~~~~~~[m[K
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = sensor_msgs::msg::CameraInfo_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.246s]    [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+[7.246s]    [01;36m[K^~~~~~~[m[K
+[7.246s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >}[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[7.640s] /home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[7.640s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:170:40:[m[K   required from here
+[7.640s] [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:127:5:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> >::publish(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr&)[m[K’
+[7.640s]      [01;31m[Kodometry_pub_[m[K->publish(odom_msg_);
+[7.640s]      [01;31m[K^~~~~~~~~~~~~[m[K
+[7.640s] In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+[7.641s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:53[m[K,
+[7.641s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.641s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+[7.641s]                  from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+[7.641s]                  from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[7.641s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<nav_msgs::msg::Odometry_<std::allocator<void> > >]
+[7.641s]    [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+[7.641s]    [01;36m[K^~~~~~~[m[K
+[7.641s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Kstd::unique_ptr<nav_msgs::msg::Odometry_<std::allocator<void> >, std::default_delete<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’
+[7.641s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.641s]    [01;36m[Kpublish[m[K(const MessageT & msg)
+[7.641s]    [01;36m[K^~~~~~~[m[K
+[7.642s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst nav_msgs::msg::Odometry_<std::allocator<void> >&[m[K’
+[7.642s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+[7.642s]    [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[7.642s]    [01;36m[K^~~~~~~[m[K
+[7.642s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[7.642s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+[7.642s]    [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+[7.642s]    [01;36m[K^~~~~~~[m[K
+[7.642s] [01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr {aka std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Krclcpp::LoanedMessage<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[11.990s] src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+[11.991s] make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+[11.991s] make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+[11.991s] make: *** [all] Error 2
+[11.991s] CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+[11.992s] Makefile:140: recipe for target 'all' failed
+[11.993s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '2': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12

@@ -1,0 +1,152 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:282:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+                       [01;35m[K^~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:178:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::shared_ptr<tf2_ros::TransformBroadcaster>::shared_ptr(std::shared_ptr<rclcpp::Node>&)[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;31m[Kodom_broadcaster[m[K(node);
+                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:352:7:[m[K [01;36m[Knote: [m[Kcandidate: std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp>&, std::nothrow_t) [with _Tp = tf2_ros::TransformBroadcaster]
+       [01;36m[Kshared_ptr[m[K(const weak_ptr<_Tp>& __r, std::nothrow_t)
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:352:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:342:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Alloc, class ... _Args> std::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...)
+  [01;36m[Kshared_ptr[m[K(_Sp_make_shared_tag __tag, const _Alloc& __a,
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:342:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  candidate expects at least 2 arguments, 1 provided
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:294:17:[m[K [01;36m[Knote: [m[Kcandidate: constexpr std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t) [with _Tp = tf2_ros::TransformBroadcaster; std::nullptr_t = std::nullptr_t]
+       constexpr [01;36m[Kshared_ptr[m[K(nullptr_t) noexcept : shared_ptr() { }
+                 [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:294:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:277:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class _Del, class> std::shared_ptr<_Tp>::shared_ptr(std::unique_ptr<_Up, _Ep>&&)
+  [01;36m[Kshared_ptr[m[K(unique_ptr<_Yp, _Del>&& __r)
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:277:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:270:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(std::auto_ptr<_Up>&&)
+  [01;36m[Kshared_ptr[m[K(auto_ptr<_Yp>&& __r);
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:270:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:265:11:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Yp>&)
+  explicit [01;36m[Kshared_ptr[m[K(const weak_ptr<_Yp>& __r)
+           [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:265:11:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ is not derived from ‘[01m[Kconst std::weak_ptr<_Tp>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:253:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Yp>&&)
+  [01;36m[Kshared_ptr[m[K(shared_ptr<_Yp>&& __r) noexcept
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:253:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:244:7:[m[K [01;36m[Knote: [m[Kcandidate: std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp>&&) [with _Tp = tf2_ros::TransformBroadcaster]
+       [01;36m[Kshared_ptr[m[K(shared_ptr&& __r) noexcept
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:244:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Kstd::shared_ptr<tf2_ros::TransformBroadcaster>&&[m[K’
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:236:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Yp>&)
+  [01;36m[Kshared_ptr[m[K(const shared_ptr<_Yp>& __r) noexcept
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:236:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:224:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Yp>&, std::shared_ptr<_Tp>::element_type*)
+  [01;36m[Kshared_ptr[m[K(const shared_ptr<_Yp>& __r, element_type* __p) noexcept
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:224:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:202:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter, _Alloc)
+  [01;36m[Kshared_ptr[m[K(nullptr_t __p, _Deleter __d, _Alloc __a)
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:202:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:183:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class _Deleter, class _Alloc, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*, _Deleter, _Alloc)
+  [01;36m[Kshared_ptr[m[K(_Yp* __p, _Deleter __d, _Alloc __a)
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:183:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[K_Yp*[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:163:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Deleter> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter)
+  [01;36m[Kshared_ptr[m[K(nullptr_t __p, _Deleter __d)
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:163:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:146:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class _Deleter, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*, _Deleter)
+  [01;36m[Kshared_ptr[m[K(_Yp* __p, _Deleter __d)
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:146:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[K_Yp*[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:129:2:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Yp, class> std::shared_ptr<_Tp>::shared_ptr(_Yp*)
+  [01;36m[Kshared_ptr[m[K(_Yp* __p) : __shared_ptr<_Tp>(__p) { }
+  [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:129:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[K_Yp*[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’
+     std::shared_ptr<tf2_ros::TransformBroadcaster> [01;36m[Kodom_broadcaster[m[K(node);
+                                                    [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/memory:81:0[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:8[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:119:7:[m[K [01;36m[Knote: [m[Kcandidate: std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = tf2_ros::TransformBroadcaster]
+       [01;36m[Kshared_ptr[m[K(const shared_ptr&) noexcept = default;
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:119:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Kconst std::shared_ptr<tf2_ros::TransformBroadcaster>&[m[K’
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:117:17:[m[K [01;36m[Knote: [m[Kcandidate: constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = tf2_ros::TransformBroadcaster]
+       constexpr [01;36m[Kshared_ptr[m[K() noexcept : __shared_ptr<_Tp>() { }
+                 [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/shared_ptr.h:117:17:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:89:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+Makefile:140: recipe for target 'all' failed

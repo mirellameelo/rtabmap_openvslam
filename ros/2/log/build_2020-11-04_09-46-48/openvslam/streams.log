@@ -1,0 +1,62 @@
+[0.026s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam
+[0.043s] -- Root directory of OpenVSLAM: /home/mirella/openvslam
+[0.043s] -- Source directory of OpenVSLAM: /home/mirella/openvslam/src
+[0.043s] -- Library directory of OpenVSLAM: /home/mirella/openvslam/build/lib
+[0.043s] -- Build type: Release
+[0.043s] -- Address/Memory sanitizer: DISABLED
+[0.043s] -- Stack trace logger: DISABLED
+[0.044s] -- Google Perftools: DISABLED
+[0.044s] -- Architecture-aware optimization (-march=native): DISABLED
+[0.044s] -- C++11 support: OK (-std=c++17)
+[0.044s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.068s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.300s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.306s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.321s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.362s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.363s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.398s] -- Found cv_bridge: 2.2.1 (/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake)
+[0.405s] -- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+[0.464s] -- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+[0.476s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[0.491s] -- Use OpenCV 3.4.0
+[0.493s] -- BoW framework: DBoW2 (found in /usr/local/include)
+[0.494s] -- Viewer for examples: pangolin viewer
+[0.644s] -- Configuring done
+[0.701s] -- Generating done
+[0.702s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/openvslam
+[0.706s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/openvslam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/openvslam
+[0.708s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.748s] [35m[1mScanning dependencies of target run_slam[0m
+[0.750s] [35m[1mScanning dependencies of target run_localization[0m
+[0.833s] [ 25%] [32mBuilding CXX object src/CMakeFiles/run_localization.dir/run_localization.cc.o[0m
+[0.871s] [ 50%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[8.708s] [ 75%] [32m[1mLinking CXX executable run_slam[0m
+[8.725s] [100%] [32m[1mLinking CXX executable run_localization[0m
+[9.481s] [100%] Built target run_slam
+[9.485s] [100%] Built target run_localization
+[9.494s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[9.508s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12
+[9.562s] [ 50%] Built target run_localization
+[9.563s] [100%] Built target run_slam
+[9.576s] [36mInstall the project...[0m
+[9.582s] -- Install configuration: "Release"
+[9.583s] -- Execute custom install script
+[9.583s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_slam
+[9.589s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_localization
+[9.596s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/package_run_dependencies/openvslam
+[9.602s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/parent_prefix_path/openvslam
+[9.608s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.sh
+[9.615s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.dsv
+[9.621s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.sh
+[9.627s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.dsv
+[9.633s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.bash
+[9.639s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.sh
+[9.646s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.zsh
+[9.652s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.dsv
+[9.658s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.dsv
+[9.664s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/packages/openvslam
+[9.670s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig.cmake
+[9.677s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig-version.cmake
+[9.683s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.xml
+[9.692s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12

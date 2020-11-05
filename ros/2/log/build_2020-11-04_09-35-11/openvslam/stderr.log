@@ -1,0 +1,6 @@
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+Pangolin_Viewer_LIB
+    linked by target "run_slam" in directory /home/mirella/openvslam/ros/2/src/openvslam/src
+    linked by target "run_localization" in directory /home/mirella/openvslam/ros/2/src/openvslam/src
+

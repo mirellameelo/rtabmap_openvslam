@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:67:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<sensor_msgs::msg::PointCloud2>(const char [12])[m[K’
+     auto point_cloud_ = node->create_publisher<sensor_msgs::msg::PointCloud2>("point_cloud"[01;31m[K)[m[K;
+                                                                                            [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:17[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:179:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+   [01;36m[Kcreate_publisher[m[K(
+   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:179:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:67:92:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+     auto point_cloud_ = node->create_publisher<sensor_msgs::msg::PointCloud2>("point_cloud"[01;36m[K)[m[K;
+                                                                                            [01;36m[K^[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

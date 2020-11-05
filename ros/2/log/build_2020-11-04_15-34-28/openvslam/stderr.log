@@ -1,0 +1,30 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:282:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+                       [01;35m[K^~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:178:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster()[m[K’
+     static tf2_ros::TransformBroadcaster [01;31m[Kbr[m[K;
+                                          [01;31m[K^~[m[K
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:53:3:[m[K [01;36m[Knote: [m[Kcandidate: template<class NodeT, class AllocatorT> tf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)
+   [01;36m[KTransformBroadcaster[m[K(
+   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:53:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:136:42:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+     static tf2_ros::TransformBroadcaster [01;36m[Kbr[m[K;
+                                          [01;36m[K^~[m[K
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:0[m[K:
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: tf2_ros::TransformBroadcaster::TransformBroadcaster(const tf2_ros::TransformBroadcaster&)
+ class [01;36m[KTransformBroadcaster[m[K{
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: tf2_ros::TransformBroadcaster::TransformBroadcaster(tf2_ros::TransformBroadcaster&&)
+[01m[K/opt/ros/eloquent/include/tf2_ros/transform_broadcaster.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:89:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

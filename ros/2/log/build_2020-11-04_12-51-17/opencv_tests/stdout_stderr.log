@@ -1,0 +1,38 @@
+running develop
+Removing /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/opencv-tests.egg-link (link to .)
+running egg_info
+writing ../../../build/opencv_tests/opencv_tests.egg-info/PKG-INFO
+writing dependency_links to ../../../build/opencv_tests/opencv_tests.egg-info/dependency_links.txt
+writing entry points to ../../../build/opencv_tests/opencv_tests.egg-info/entry_points.txt
+writing requirements to ../../../build/opencv_tests/opencv_tests.egg-info/requires.txt
+writing top-level names to ../../../build/opencv_tests/opencv_tests.egg-info/top_level.txt
+reading manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+writing manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mirella/openvslam/ros/2/build/opencv_tests/build
+creating /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib
+creating /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes
+copying nodes/rosfacedetect.py -> /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes
+copying nodes/broadcast.py -> /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes
+copying nodes/source.py -> /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes
+copying nodes/__init__.py -> /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes
+running install
+running install_lib
+creating /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes
+copying /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes/rosfacedetect.py -> /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes
+copying /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes/broadcast.py -> /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes
+copying /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes/source.py -> /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes
+copying /home/mirella/openvslam/ros/2/build/opencv_tests/build/lib/nodes/__init__.py -> /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes
+byte-compiling /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes/rosfacedetect.py to rosfacedetect.cpython-36.pyc
+byte-compiling /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes/broadcast.py to broadcast.cpython-36.pyc
+byte-compiling /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes/source.py to source.cpython-36.pyc
+byte-compiling /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/nodes/__init__.py to __init__.cpython-36.pyc
+running install_data
+running install_egg_info
+Copying ../../../build/opencv_tests/opencv_tests.egg-info to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/opencv_tests-2.1.4-py3.6.egg-info
+running install_scripts
+Installing broadcast script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+Installing rosfacedetect script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+Installing source script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+writing list of installed files to '/home/mirella/openvslam/ros/2/build/opencv_tests/install.log'

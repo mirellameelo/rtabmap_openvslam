@@ -1,0 +1,64 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:13:[m[K [01;31m[Kerror: [m[K‘[01m[KWallTime[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+     rclcpp::[01;31m[KWallTime[m[K<std::function<void()>(0.2,my_callback);
+             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KWallTimer[m[K’
+     rclcpp::[01;36m[KWallTime[m[K<std::function<void()>(0.2,my_callback);
+             [01;36m[K^~~~~~~~[m[K
+             [32m[KWallTimer[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:59:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::function<void()>::function(double, boost::_bi::bind_t<void, void (*)(), boost::_bi::list0>&)[m[K’
+     rclcpp::WallTime<std::function<void()>(0.2,my_callback[01;31m[K)[m[K;
+                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/functional:58:0[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Core:281[m[K,
+                 from [01m[K/home/mirella/openvslam/src/openvslam/type.h:10[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:6[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/std_function.h:685:7:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Functor, class, class> std::function<_Res(_ArgTypes ...)>::function(_Functor)
+       [01;36m[Kfunction<_Res(_ArgTypes...)>[m[K::
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/std_function.h:685:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:324:59:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+     rclcpp::WallTime<std::function<void()>(0.2,my_callback[01;36m[K)[m[K;
+                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/7/functional:58:0[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Core:281[m[K,
+                 from [01m[K/home/mirella/openvslam/src/openvslam/type.h:10[m[K,
+                 from [01m[K/home/mirella/openvslam/src/pangolin_viewer/viewer.h:6[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:3[m[K:
+[01m[K/usr/include/c++/7/bits/std_function.h:441:7:[m[K [01;36m[Knote: [m[Kcandidate: std::function<_Res(_ArgTypes ...)>::function(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {}]
+       [01;36m[Kfunction[m[K(function&& __x) noexcept : _Function_base()
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/std_function.h:441:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/7/bits/std_function.h:671:5:[m[K [01;36m[Knote: [m[Kcandidate: std::function<_Res(_ArgTypes ...)>::function(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {}]
+     [01;36m[Kfunction<_Res(_ArgTypes...)>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/std_function.h:671:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/7/bits/std_function.h:421:7:[m[K [01;36m[Knote: [m[Kcandidate: std::function<_Res(_ArgTypes ...)>::function(std::nullptr_t) [with _Res = void; _ArgTypes = {}; std::nullptr_t = std::nullptr_t]
+       [01;36m[Kfunction[m[K(nullptr_t) noexcept
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/std_function.h:421:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/7/bits/std_function.h:414:7:[m[K [01;36m[Knote: [m[Kcandidate: std::function<_Res(_ArgTypes ...)>::function() [with _Res = void; _ArgTypes = {}]
+       [01;36m[Kfunction[m[K() noexcept
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/bits/std_function.h:414:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Keval_log[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool [01;35m[Keval_log[m[K, const std::string& map_db_path) {
+                                                                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmap_db_path[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ std::string& mask_img_path, const bool eval_log, const std::string& [01;35m[Kmap_db_path[m[K) {
+                                                                     [01;35m[K^~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:187:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:96:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

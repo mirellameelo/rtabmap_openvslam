@@ -1,0 +1,135 @@
+[0.198s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.225s] -- Root directory of OpenVSLAM: /home/mirella/openvslam
+[0.225s] -- Source directory of OpenVSLAM: /home/mirella/openvslam/src
+[0.225s] -- Library directory of OpenVSLAM: /home/mirella/openvslam/build/lib
+[0.226s] -- Build type: Release
+[0.226s] -- Address/Memory sanitizer: DISABLED
+[0.226s] -- Stack trace logger: DISABLED
+[0.226s] -- Google Perftools: DISABLED
+[0.226s] -- Architecture-aware optimization (-march=native): DISABLED
+[0.226s] -- C++11 support: OK (-std=c++17)
+[0.227s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.258s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.453s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.460s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.472s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.502s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.503s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.532s] -- Found cv_bridge: 2.1.4 (/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake)
+[0.541s] -- Found tf2_ros: 0.12.5 (/opt/ros/eloquent/share/tf2_ros/cmake)
+[0.600s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.611s] -- Found visualization_msgs: 0.8.1 (/opt/ros/eloquent/share/visualization_msgs/cmake)
+[0.620s] -- Found pcl_conversions: 2.1.0 (/opt/ros/eloquent/share/pcl_conversions/cmake)
+[0.674s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.683s] -- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+[0.705s] -- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+[0.714s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[0.745s] -- Boost version: 1.65.1
+[0.745s] -- Found the following Boost libraries:
+[0.746s] --   system
+[0.784s] -- Boost version: 1.65.1
+[0.785s] -- Found the following Boost libraries:
+[0.785s] --   system
+[0.785s] --   filesystem
+[0.785s] --   thread
+[0.785s] --   date_time
+[0.785s] --   iostreams
+[0.785s] --   serialization
+[0.785s] --   chrono
+[0.785s] --   atomic
+[0.785s] --   regex
+[0.799s] -- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+[0.799s] ** WARNING ** io features related to ensenso will be disabled
+[0.802s] -- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+[0.802s] ** WARNING ** io features related to davidSDK will be disabled
+[0.803s] -- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+[0.803s] ** WARNING ** io features related to dssdk will be disabled
+[0.804s] ** WARNING ** io features related to pcap will be disabled
+[0.804s] ** WARNING ** io features related to png will be disabled
+[0.855s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0.855s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0.855s] but this file does not exist.  Possible reasons include:
+[0.856s] * The file was deleted, renamed, or moved to another location.
+[0.856s] * An install or uninstall procedure did not complete successfully.
+[0.856s] * The installation package was faulty and contained
+[0.856s]    "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+[0.856s] but not all the files it references.
+[0.856s] 
+[0.856s] -- The imported target "vtk" references the file
+[0.856s]    "/usr/bin/vtk"
+[0.856s] but this file does not exist.  Possible reasons include:
+[0.856s] * The file was deleted, renamed, or moved to another location.
+[0.856s] * An install or uninstall procedure did not complete successfully.
+[0.856s] * The installation package was faulty and contained
+[0.856s]    "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"
+[0.856s] but not all the files it references.
+[0.857s] 
+[0.896s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[0.921s] -- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+[0.922s] ** WARNING ** visualization features related to ensenso will be disabled
+[0.924s] -- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+[0.924s] ** WARNING ** visualization features related to davidSDK will be disabled
+[0.924s] -- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) 
+[0.924s] ** WARNING ** visualization features related to dssdk will be disabled
+[0.925s] -- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) 
+[0.925s] ** WARNING ** visualization features related to rssdk will be disabled
+[0.961s] -- looking for PCL_COMMON
+[0.962s] -- looking for PCL_OCTREE
+[0.962s] -- looking for PCL_IO
+[0.963s] -- looking for PCL_KDTREE
+[0.963s] -- looking for PCL_SEARCH
+[0.964s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.964s] -- looking for PCL_FILTERS
+[0.964s] -- looking for PCL_2D
+[0.965s] -- looking for PCL_GEOMETRY
+[0.965s] -- looking for PCL_FEATURES
+[0.966s] -- looking for PCL_ML
+[0.966s] -- looking for PCL_SEGMENTATION
+[0.968s] -- looking for PCL_VISUALIZATION
+[0.968s] -- looking for PCL_SURFACE
+[0.968s] -- looking for PCL_REGISTRATION
+[0.968s] -- looking for PCL_KEYPOINTS
+[0.969s] -- looking for PCL_TRACKING
+[0.969s] -- looking for PCL_RECOGNITION
+[0.970s] -- looking for PCL_STEREO
+[0.970s] -- looking for PCL_APPS
+[0.972s] -- looking for PCL_IN_HAND_SCANNER
+[0.973s] -- looking for PCL_MODELER
+[0.973s] -- looking for PCL_POINT_CLOUD_EDITOR
+[0.973s] -- looking for PCL_OUTOFCORE
+[0.974s] -- looking for PCL_PEOPLE
+[0.993s] -- Use OpenCV 3.4.0
+[0.995s] -- BoW framework: DBoW2 (found in /usr/local/include)
+[0.998s] -- Viewer for examples: pangolin viewer
+[1.594s] -- Configuring done
+[1.670s] -- Generating done
+[1.673s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/openvslam
+[1.729s] [ 25%] [32m[1mLinking CXX executable run_slam[0m
+[1.734s] [ 50%] [32m[1mLinking CXX executable run_localization[0m
+[2.603s] [ 75%] Built target run_slam
+[2.902s] [100%] Built target run_localization
+[2.912s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[2.935s] Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12
+[3.013s] [ 50%] Built target run_localization
+[3.024s] [100%] Built target run_slam
+[3.040s] [36mInstall the project...[0m
+[3.049s] -- Install configuration: "Release"
+[3.049s] -- Execute custom install script
+[3.049s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_slam
+[3.050s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_localization
+[3.050s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/package_run_dependencies/openvslam
+[3.050s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/parent_prefix_path/openvslam
+[3.051s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.sh
+[3.051s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.dsv
+[3.051s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.sh
+[3.051s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.dsv
+[3.052s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.bash
+[3.052s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.sh
+[3.052s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.zsh
+[3.052s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.dsv
+[3.052s] -- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.dsv
+[3.061s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/packages/openvslam
+[3.061s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig.cmake
+[3.061s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig-version.cmake
+[3.061s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.xml
+[3.066s] Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/build/opencv_tests:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12

@@ -1,0 +1,46 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:211:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> >::publish(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >&)[m[K’
+         odometry_publisher->publish(odom_msg_[01;31m[K)[m[K;
+                                              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/eloquent/include/rclcpp/node_interfaces/node_topics_interface.hpp:26:0[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/node.hpp:53[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/eloquent/include/rclcpp/rclcpp.hpp:145[m[K,
+                 from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:21[m[K:
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_NodeAlloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<nav_msgs::msg::Odometry_<std::allocator<void> > >]
+   [01;36m[Kpublish[m[K(std::unique_ptr<MessageT, MessageDeleter> msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:159:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >[m[K’ to ‘[01m[Kstd::unique_ptr<nav_msgs::msg::Odometry_<std::allocator<void> >, std::default_delete<nav_msgs::msg::Odometry_<std::allocator<void> > > >[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const MessageT&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(const MessageT & msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:183:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst nav_msgs::msg::Odometry_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_t]
+   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:200:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rcl_serialized_message_t& {aka const rcutils_uint8_array_t&}[m[K’
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[Kcandidate: void rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<MessageT, AllocatorT>&&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>]
+   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<MessageT, AllocatorT> && loaned_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/eloquent/include/rclcpp/publisher.hpp:214:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >[m[K’ to ‘[01m[Krclcpp::LoanedMessage<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:147:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:148:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:170:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:82:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+src/CMakeFiles/run_slam.dir/build.make:62: recipe for target 'src/CMakeFiles/run_slam.dir/run_slam.cc.o' failed
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/run_slam.dir/all' failed
+Makefile:140: recipe for target 'all' failed

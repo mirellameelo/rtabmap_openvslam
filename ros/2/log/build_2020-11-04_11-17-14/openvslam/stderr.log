@@ -1,0 +1,14 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, openvslam::system*)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:64:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_image_msg_sub[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& [01;35m[Kleft_image_msg_sub[m[K,
+                                                              [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:65:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSLAM[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+             openvslam::system* [01;35m[KSLAM[m[K){
+                                [01;35m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:102:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktp_0[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     const auto [01;35m[Ktp_0[m[K = std::chrono::steady_clock::now();
+                [01;35m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:106:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+                       [01;35m[K^~~~~~~~~~[m[K

@@ -1,0 +1,50 @@
+-- Root directory of OpenVSLAM: /home/mirella/openvslam
+-- Build type: Release
+-- Address/Memory sanitizer: DISABLED
+-- Architecture-aware optimization (-march=native): DISABLED
+-- C++11 support: OK (-std=c++17)
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found cv_bridge: 2.1.4 (/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/cmake)
+-- Found image_transport: 2.2.1 (/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/cmake)
+-- Found tinyxml2_vendor:  (/opt/ros/eloquent/share/tinyxml2_vendor/cmake)
+-- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+-- Use OpenCV 3.4.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mirella/openvslam/ros/2/build/publisher
+[35m[1mScanning dependencies of target image_publisher[0m
+[35m[1mScanning dependencies of target video_publisher[0m
+[ 20%] [32mBuilding CXX object src/CMakeFiles/video_publisher.dir/video_publisher.cc.o[0m
+[ 40%] [32mBuilding CXX object src/CMakeFiles/image_publisher.dir/image_publisher.cc.o[0m
+[ 60%] [32m[1mLinking CXX executable video[0m
+[ 80%] [32m[1mLinking CXX executable image[0m
+[100%] Built target image_publisher
+[100%] Built target video_publisher
+[ 40%] Built target video_publisher
+[100%] Built target image_publisher
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/lib/publisher/video
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/lib/publisher/image
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/package_run_dependencies/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/parent_prefix_path/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.bash
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.zsh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/packages/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/cmake/publisherConfig.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/cmake/publisherConfig-version.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.xml

@@ -1,0 +1,18 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:291:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+                       [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:323:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmy_callback[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     auto [01;35m[Kmy_callback[m[K = boost::bind(callback_time);
+          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Keval_log[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                    const std::string& mask_img_path, const bool [01;35m[Keval_log[m[K, const std::string& map_db_path) {
+                                                                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:238:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmap_db_path[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ std::string& mask_img_path, const bool eval_log, const std::string& [01;35m[Kmap_db_path[m[K) {
+                                                                     [01;35m[K^~~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:187:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:96:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K

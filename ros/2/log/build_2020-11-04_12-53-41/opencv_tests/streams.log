@@ -1,0 +1,26 @@
+[0.228s] Invoking command in '/home/mirella/openvslam/ros/2/build/opencv_tests': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --uninstall --editable --build-directory /home/mirella/openvslam/ros/2/build/opencv_tests/build
+[0.468s] running develop
+[0.601s] Invoked command in '/home/mirella/openvslam/ros/2/build/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --uninstall --editable --build-directory /home/mirella/openvslam/ros/2/build/opencv_tests/build
+[0.601s] Invoking command in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/mirella/openvslam/ros/2/build/opencv_tests/build install --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --record /home/mirella/openvslam/ros/2/build/opencv_tests/install.log --single-version-externally-managed
+[0.782s] running egg_info
+[0.782s] writing ../../../build/opencv_tests/opencv_tests.egg-info/PKG-INFO
+[0.783s] writing dependency_links to ../../../build/opencv_tests/opencv_tests.egg-info/dependency_links.txt
+[0.783s] writing entry points to ../../../build/opencv_tests/opencv_tests.egg-info/entry_points.txt
+[0.783s] writing requirements to ../../../build/opencv_tests/opencv_tests.egg-info/requires.txt
+[0.783s] writing top-level names to ../../../build/opencv_tests/opencv_tests.egg-info/top_level.txt
+[0.808s] reading manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[0.808s] writing manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[0.809s] running build
+[0.809s] running build_py
+[0.809s] running install
+[0.809s] running install_lib
+[0.810s] running install_data
+[0.810s] running install_egg_info
+[0.812s] removing '/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/opencv_tests-2.1.4-py3.6.egg-info' (and everything under it)
+[0.812s] Copying ../../../build/opencv_tests/opencv_tests.egg-info to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages/opencv_tests-2.1.4-py3.6.egg-info
+[0.813s] running install_scripts
+[0.826s] Installing broadcast script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+[0.827s] Installing rosfacedetect script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+[0.827s] Installing source script to /home/mirella/openvslam/ros/2/install/opencv_tests/lib/opencv_tests
+[0.827s] writing list of installed files to '/home/mirella/openvslam/ros/2/build/opencv_tests/install.log'
+[0.842s] Invoked command in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/mirella/openvslam/ros/2/build/opencv_tests/build install --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --record /home/mirella/openvslam/ros/2/build/opencv_tests/install.log --single-version-externally-managed

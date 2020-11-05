@@ -1,0 +1,8 @@
+In file included from [01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:44:0[m[K:
+[01m[K/opt/ros/eloquent/include/pcl_conversions/pcl_conversions.h:46:10:[m[K [01;31m[Kfatal error: [m[Kpcl/conversions.h: Arquivo ou diretório inexistente
+ #include [01;31m[K<pcl/conversions.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,71 @@
+[0.020s] Invoking command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/camera_calibration_parsers -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/camera_calibration_parsers
+[0.031s] -- Found ament_cmake_ros: 0.8.0 (/opt/ros/eloquent/share/ament_cmake_ros/cmake)
+[0.054s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.200s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.209s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.220s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.249s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.250s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.277s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.296s] -- Found yaml_cpp_vendor: 7.0.0 (/opt/ros/eloquent/share/yaml_cpp_vendor/cmake)
+[0.296s] -- Setting yaml-cpp_DIR to: '/opt/ros/eloquent/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[0.324s] -- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)
+[0.325s] -- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)
+[0.325s] -- Found ament_cmake_lint_cmake: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_lint_cmake/cmake)
+[0.326s] -- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)
+[0.328s] -- Found gtest sources under '/opt/ros/eloquent/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.399s] -- Configuring done
+[0.444s] -- Generating done
+[0.448s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/camera_calibration_parsers
+[0.452s] Invoked command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/camera_calibration_parsers -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/camera_calibration_parsers
+[0.453s] Invoking command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers -- -j12 -l12
+[0.502s] [ 14%] Built target gtest
+[0.505s] [ 28%] Built target gtest_main
+[0.506s] [ 35%] [32m[1mLinking CXX shared library libcamera_calibration_parsers.so[0m
+[0.628s] [ 57%] Built target camera_calibration_parsers
+[0.651s] [ 64%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers-parse_ini.dir/test/test_parse_ini.cpp.o[0m
+[0.651s] [ 71%] [32m[1mLinking CXX executable convert[0m
+[0.655s] [ 78%] [32mBuilding CXX object CMakeFiles/camera_calibration_parsers-parse_yml.dir/test/test_parse_yml.cpp.o[0m
+[0.821s] [ 85%] Built target convert
+[1.708s] [ 92%] [32m[1mLinking CXX executable camera_calibration_parsers-parse_ini[0m
+[1.758s] [100%] [32m[1mLinking CXX executable camera_calibration_parsers-parse_yml[0m
+[1.995s] [100%] Built target camera_calibration_parsers-parse_yml
+[2.017s] [100%] Built target camera_calibration_parsers-parse_ini
+[2.029s] Invoked command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers -- -j12 -l12
+[2.066s] Invoking command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers --target install -- -j12 -l12
+[2.131s] [ 14%] Built target gtest
+[2.136s] [ 28%] Built target gtest_main
+[2.141s] [ 57%] Built target camera_calibration_parsers
+[2.171s] [ 71%] Built target camera_calibration_parsers-parse_ini
+[2.172s] [ 85%] Built target camera_calibration_parsers-parse_yml
+[2.174s] [100%] Built target convert
+[2.203s] [36mInstall the project...[0m
+[2.216s] -- Install configuration: ""
+[2.216s] -- Execute custom install script
+[2.217s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/libcamera_calibration_parsers.so
+[2.218s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/camera_calibration_parsers/convert
+[2.218s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse.h
+[2.219s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_ini.h
+[2.219s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/parse_yml.h
+[2.219s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/include/camera_calibration_parsers/visibility_control.hpp
+[2.219s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.sh
+[2.220s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/library_path.dsv
+[2.220s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/package_run_dependencies/camera_calibration_parsers
+[2.221s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/parent_prefix_path/camera_calibration_parsers
+[2.221s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.sh
+[2.222s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/ament_prefix_path.dsv
+[2.222s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.sh
+[2.222s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/environment/path.dsv
+[2.223s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.bash
+[2.223s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.sh
+[2.224s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.zsh
+[2.224s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/local_setup.dsv
+[2.224s] -- Symlinking: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.dsv
+[2.240s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/ament_index/resource_index/packages/camera_calibration_parsers
+[2.240s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.240s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_libraries-extras.cmake
+[2.241s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.241s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig.cmake
+[2.241s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/cmake/camera_calibration_parsersConfig-version.cmake
+[2.241s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.xml
+[2.249s] Invoked command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers --target install -- -j12 -l12

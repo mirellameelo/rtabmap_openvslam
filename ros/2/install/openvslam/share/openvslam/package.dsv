@@ -1,0 +1,8 @@
+source;share/openvslam/hook/cmake_prefix_path.ps1
+source;share/openvslam/hook/cmake_prefix_path.dsv
+source;share/openvslam/hook/cmake_prefix_path.sh
+source;share/openvslam/local_setup.bash
+source;share/openvslam/local_setup.dsv
+source;share/openvslam/local_setup.ps1
+source;share/openvslam/local_setup.sh
+source;share/openvslam/local_setup.zsh

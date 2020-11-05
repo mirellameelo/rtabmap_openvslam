@@ -1,0 +1,1 @@
+/home/mirella/openvslam/ros/2/build/openvslam/ament_cmake_core/openvslamConfig.cmake

@@ -1,0 +1,1 @@
+/home/mirella/openvslam/ros/2/build/image_common/ament_cmake_core/image_commonConfig.cmake

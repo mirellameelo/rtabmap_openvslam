@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target run_slam[0m
+[ 50%] Built target run_localization
+[ 75%] [32mBuilding CXX object src/CMakeFiles/run_slam.dir/run_slam.cc.o[0m
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:147:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ sor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+                                                                     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:148:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ sor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+                                                                     [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:149:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ s::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kleft_publisher_config[m[K,
+                                                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:150:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ s::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kright_publisher_config[m[K,
+                                                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid mono_tracking(const std::shared_ptr<openvslam::config>&, const string&, const string&, bool, const string&)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:262:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcustom_qos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+     rmw_qos_profile_t [01;35m[Kcustom_qos[m[K = rmw_qos_profile_default;
+                       [01;35m[K^~~~~~~~~~[m[K
+/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc: In instantiation of ‘[01m[Kvoid publi(auto:3, auto:4&, auto:5) [with auto:3 = Eigen::Matrix<double, 4, 4>; auto:4 = std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >; auto:5 = std::shared_ptr<rclcpp::Node>][m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:170:40:[m[K   required from here
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:82:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_pub_[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void publi(auto cam_pose_, auto &[01;35m[Kodometry_pub_[m[K, auto node){
+                                  [01;35m[K^~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable run_slam[0m
+[100%] Built target run_slam
+[ 50%] Built target run_localization
+[100%] Built target run_slam
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_slam
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/lib/openvslam/run_localization
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/package_run_dependencies/openvslam
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/parent_prefix_path/openvslam
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/environment/path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.bash
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.zsh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/local_setup.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/ament_index/resource_index/packages/openvslam
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/cmake/openvslamConfig-version.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.xml

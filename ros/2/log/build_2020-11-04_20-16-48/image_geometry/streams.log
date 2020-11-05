@@ -1,0 +1,44 @@
+[0.044s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+[0.123s] [ 22%] Built target gtest_main
+[0.125s] [ 44%] Built target gtest
+[0.137s] [ 77%] Built target image_geometry
+[0.163s] [100%] Built target image_geometry-utest
+[0.179s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+[0.203s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12
+[0.266s] [ 22%] Built target gtest
+[0.267s] [ 44%] Built target gtest_main
+[0.277s] [ 77%] Built target image_geometry
+[0.301s] [100%] Built target image_geometry-utest
+[0.319s] [36mInstall the project...[0m
+[0.327s] -- Install configuration: ""
+[0.327s] -- Execute custom install script
+[0.327s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[0.328s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[0.328s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages/image_geometry/__init__.py
+[0.328s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages/image_geometry/cameramodels.py
+[0.329s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/include/image_geometry/pinhole_camera_model.h
+[0.329s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/include/image_geometry/stereo_camera_model.h
+[0.329s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/include/image_geometry/visibility_control.hpp
+[0.329s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/lib/libimage_geometry.so
+[0.330s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/library_path.sh
+[0.330s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/library_path.dsv
+[0.330s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[0.330s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[0.330s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[0.331s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[0.331s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/path.sh
+[0.331s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/environment/path.dsv
+[0.331s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/local_setup.bash
+[0.332s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/local_setup.sh
+[0.332s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/local_setup.zsh
+[0.333s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/local_setup.dsv
+[0.333s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.dsv
+[0.344s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[0.344s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_libraries-extras.cmake
+[0.345s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.345s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.346s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[0.346s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[0.346s] -- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.xml
+[0.400s] Listing '/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages/image_geometry'...
+[0.407s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12

@@ -1,0 +1,18 @@
+** WARNING ** io features related to ensenso will be disabled
+** WARNING ** io features related to davidSDK will be disabled
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+** WARNING ** visualization features related to ensenso will be disabled
+** WARNING ** visualization features related to davidSDK will be disabled
+** WARNING ** visualization features related to dssdk will be disabled
+** WARNING ** visualization features related to rssdk will be disabled
+CMake Error at /opt/ros/eloquent/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:52 (message):
+  ament_target_dependencies() the passed package name 'visualization_msgs'
+  was not found before
+Call Stack (most recent call first):
+  src/CMakeLists.txt:56 (ament_target_dependencies)
+
+
+make: *** [cmake_check_build_system] Error 1

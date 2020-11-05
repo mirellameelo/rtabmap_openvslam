@@ -1,0 +1,40 @@
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:[m[K In function ‘[01m[Kvoid callback(const ConstSharedPtr&, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void> > >, openvslam::system*, cv::Mat, std::shared_ptr<rclcpp::Node>)[m[K’:
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:48:107:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+                    const std::string& mask_img_path, const bool eval_log, const std::string& map_db_path) [01;31m[K{[m[K
+                                                                                                           [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:157:34:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ int main(int argc, char* argv[]) [01;31m[K{[m[K
+                                  [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:232:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:32:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_image_msg_sub[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& [01;35m[Kleft_image_msg_sub[m[K,
+                                                              [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:34:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kleft_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:35:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> [01;35m[Kright_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:36:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kleft_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+         std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kleft_publisher_config[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:37:129:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kright_publisher_config[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+         std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > [01;35m[Kright_publisher_config[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:38:123:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_publisher[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+               std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void>>> [01;35m[Kodometry_publisher[m[K,
+                                                                                                                         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:39:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSLAM[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                 openvslam::system* [01;35m[KSLAM[m[K,
+                                    [01;35m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:40:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmask[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                 const cv::Mat [01;35m[Kmask[m[K,
+                               [01;35m[K^~~~[m[K
+[01m[K/home/mirella/openvslam/ros/2/src/openvslam/src/run_slam.cc:41:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knode[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+                 std::shared_ptr<rclcpp::Node> [01;35m[Knode[m[K
+                                               [01;35m[K^~~~[m[K
+make[2]: *** [src/CMakeFiles/run_slam.dir/run_slam.cc.o] Error 1
+make[1]: *** [src/CMakeFiles/run_slam.dir/all] Error 2
+make: *** [all] Error 2

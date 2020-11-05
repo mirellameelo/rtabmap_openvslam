@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target image_publisher[0m
+[ 40%] Built target video_publisher
+[ 60%] [32mBuilding CXX object src/CMakeFiles/image_publisher.dir/image_publisher.cc.o[0m
+src/CMakeFiles/image_publisher.dir/build.make:62: recipe for target 'src/CMakeFiles/image_publisher.dir/image_publisher.cc.o' failed
+CMakeFiles/Makefile2:151: recipe for target 'src/CMakeFiles/image_publisher.dir/all' failed
+Makefile:140: recipe for target 'all' failed

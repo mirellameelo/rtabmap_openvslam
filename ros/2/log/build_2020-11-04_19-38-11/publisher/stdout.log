@@ -1,0 +1,27 @@
+[35m[1mScanning dependencies of target image_publisher[0m
+[ 40%] Built target video_publisher
+[ 60%] [32mBuilding CXX object src/CMakeFiles/image_publisher.dir/image_publisher.cc.o[0m
+[ 80%] [32m[1mLinking CXX executable image[0m
+[100%] Built target image_publisher
+[ 60%] Built target image_publisher
+[100%] Built target video_publisher
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/lib/publisher/video
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/lib/publisher/image
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/package_run_dependencies/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/parent_prefix_path/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/environment/path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.bash
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.zsh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/local_setup.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/ament_index/resource_index/packages/publisher
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/cmake/publisherConfig.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/cmake/publisherConfig-version.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.xml

@@ -1,0 +1,48 @@
+[0.010s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_common': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/image_common -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/image_common
+[0.066s] -- The C compiler identification is GNU 7.5.0
+[0.109s] -- The CXX compiler identification is GNU 7.5.0
+[0.112s] -- Check for working C compiler: /usr/bin/cc
+[0.175s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.176s] -- Detecting C compiler ABI info
+[0.246s] -- Detecting C compiler ABI info - done
+[0.255s] -- Detecting C compile features
+[0.465s] -- Detecting C compile features - done
+[0.467s] -- Check for working CXX compiler: /usr/bin/c++
+[0.560s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.560s] -- Detecting CXX compiler ABI info
+[0.646s] -- Detecting CXX compiler ABI info - done
+[0.650s] -- Detecting CXX compile features
+[1.001s] -- Detecting CXX compile features - done
+[1.003s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[1.027s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.027s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.187s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.206s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[1.278s] -- Added test 'lint_cmake' to check CMake code style
+[1.280s] -- Added test 'xmllint' to check XML markup files
+[1.281s] -- Configuring done
+[1.283s] -- Generating done
+[1.284s] -- Build files have been written to: /home/mirella/openvslam/ros/2/build/image_common
+[1.287s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_common' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mirella/openvslam/ros/2/src/image_common/image_common -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mirella/openvslam/ros/2/install/image_common
+[1.289s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_common': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common -- -j12 -l12
+[1.336s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_common' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common -- -j12 -l12
+[1.358s] Invoking command in '/home/mirella/openvslam/ros/2/build/image_common': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common --target install -- -j12 -l12
+[1.409s] [36mInstall the project...[0m
+[1.421s] -- Install configuration: ""
+[1.421s] -- Execute custom install script
+[1.422s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/package_run_dependencies/image_common
+[1.430s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/parent_prefix_path/image_common
+[1.440s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/ament_prefix_path.sh
+[1.449s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/ament_prefix_path.dsv
+[1.456s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/path.sh
+[1.465s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/path.dsv
+[1.473s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.bash
+[1.482s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.sh
+[1.490s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.zsh
+[1.498s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.dsv
+[1.507s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.dsv
+[1.515s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/packages/image_common
+[1.523s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/cmake/image_commonConfig.cmake
+[1.532s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/cmake/image_commonConfig-version.cmake
+[1.540s] -- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.xml
+[1.551s] Invoked command in '/home/mirella/openvslam/ros/2/build/image_common' returned '0': AMENT_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common --target install -- -j12 -l12

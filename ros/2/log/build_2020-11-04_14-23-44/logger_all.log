@@ -1,0 +1,775 @@
+[0.130s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.130s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f68eaf6b828>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f68eaf6b828>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f68eaf6bb38>)
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.134s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mirella/openvslam/ros/2'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'ros'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_calibration_parsers) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_common/camera_calibration_parsers' with type 'ros.ament_cmake' and name 'camera_calibration_parsers'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/camera_info_manager) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_common/camera_info_manager' with type 'ros.ament_cmake' and name 'camera_info_manager'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_common) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_common/image_common' with type 'ros.ament_cmake' and name 'image_common'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/image_transport) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_common/image_transport' with type 'ros.ament_cmake' and name 'image_transport'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/polled_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/polled_camera) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_common/polled_camera) ignored
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/openvslam) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openvslam' with type 'ros.ament_cmake' and name 'openvslam'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/publisher' with type 'ros.ament_cmake' and name 'publisher'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_clean_first' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'cmake_force_configure' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'ament_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'camera_calibration_parsers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.174s] DEBUG:colcon.colcon_core.verb:Building package 'camera_calibration_parsers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/image_common/camera_calibration_parsers', 'symlink_install': False, 'test_result_base': None}
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[0.176s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.177s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/cv_bridge', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/vision_opencv/cv_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.179s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/image_geometry', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/vision_opencv/image_geometry', 'symlink_install': False, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'image_transport' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'image_transport' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/image_transport', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/image_transport', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/image_common/image_transport', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'camera_info_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'camera_info_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/camera_info_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/camera_info_manager', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/image_common/camera_info_manager', 'symlink_install': False, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/opencv_tests', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'openvslam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'openvslam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/openvslam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/openvslam', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/openvslam', 'symlink_install': False, 'test_result_base': None}
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/publisher', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/publisher', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/vision_opencv', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/vision_opencv/vision_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_args' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_target' from command line to 'None'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.201s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'image_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'image_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mirella/openvslam/ros/2/build/image_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mirella/openvslam/ros/2/install/image_common', 'merge_install': False, 'path': '/home/mirella/openvslam/ros/2/src/image_common/image_common', 'symlink_install': False, 'test_result_base': None}
+[0.202s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.203s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/vision_opencv/cv_bridge' with build type 'ament_cmake'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/vision_opencv/cv_bridge'
+[0.207s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.209s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.211s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/image_common/image_transport' with build type 'ament_cmake'
+[0.211s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/image_common/image_transport'
+[0.212s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.212s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.214s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.215s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/image_common/camera_calibration_parsers' with build type 'ament_cmake'
+[0.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/image_common/camera_calibration_parsers'
+[0.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.220s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/vision_opencv/image_geometry' with build type 'ament_cmake'
+[0.220s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/vision_opencv/image_geometry'
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.222s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge -- -j12 -l12
+[0.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport -- -j12 -l12
+[0.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers -- -j12 -l12
+[0.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+[0.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry -- -j12 -l12
+[0.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers -- -j12 -l12
+[0.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge -- -j12 -l12
+[0.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12
+[0.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge --target install -- -j12 -l12
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers --target install -- -j12 -l12
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport -- -j12 -l12
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport --target install -- -j12 -l12
+[0.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_calibration_parsers)
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/camera_calibration_parsers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_calibration_parsers --target install -- -j12 -l12
+[0.541s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers' for CMake module files
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers' for CMake config files
+[0.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_calibration_parsers', 'cmake_prefix_path')
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.ps1'
+[0.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.dsv'
+[0.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.sh'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib'
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_calibration_parsers', 'ld_library_path_lib')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.sh'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/bin'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/pkgconfig/camera_calibration_parsers.pc'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/python3.6/site-packages'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.dsv'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.sh'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.bash'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.zsh'
+[0.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/colcon-core/packages/camera_calibration_parsers)
+[0.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry' for CMake module files
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib'
+[0.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_geometry --target install -- -j12 -l12
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/bin'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages'
+[0.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'pythonpath')
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.ps1'
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.dsv'
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.sh'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.ps1'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.dsv'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.sh'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.bash'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.zsh'
+[0.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_geometry/share/colcon-core/packages/image_geometry)
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge' for CMake module files
+[0.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/cv_bridge --target install -- -j12 -l12
+[0.604s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge' for CMake config files
+[0.604s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib'
+[0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/bin'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages'
+[0.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'pythonpath')
+[0.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.ps1'
+[0.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.dsv'
+[0.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.sh'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.ps1'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.dsv'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.sh'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.bash'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.zsh'
+[0.612s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[0.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_calibration_parsers)
+[0.616s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers' for CMake module files
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers' for CMake config files
+[0.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_calibration_parsers', 'cmake_prefix_path')
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.dsv'
+[0.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/cmake_prefix_path.sh'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib'
+[0.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_calibration_parsers', 'ld_library_path_lib')
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.ps1'
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.dsv'
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/hook/ld_library_path_lib.sh'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/bin'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/pkgconfig/camera_calibration_parsers.pc'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib/python3.6/site-packages'
+[0.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.ps1'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.dsv'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.sh'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.bash'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/camera_calibration_parsers/package.zsh'
+[0.623s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/share/colcon-core/packages/camera_calibration_parsers)
+[0.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry' for CMake module files
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry' for CMake config files
+[0.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[0.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib'
+[0.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[0.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/bin'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages'
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'pythonpath')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/hook/pythonpath.sh'
+[0.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.ps1'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.dsv'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.sh'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.bash'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_geometry/share/image_geometry/package.zsh'
+[0.637s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_geometry/share/colcon-core/packages/image_geometry)
+[0.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge' for CMake module files
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge' for CMake config files
+[0.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[0.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib'
+[0.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/bin'
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages'
+[0.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'pythonpath')
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.dsv'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/hook/pythonpath.sh'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.ps1'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.dsv'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.sh'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.bash'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/cv_bridge/share/cv_bridge/package.zsh'
+[0.647s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[0.647s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests' with build type 'ament_python'
+[0.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'ament_prefix_path')
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.ps1'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.dsv'
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.sh'
+[0.649s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.649s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.651s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.653s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/vision_opencv/vision_opencv' with build type 'ament_cmake'
+[0.653s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/vision_opencv/vision_opencv'
+[0.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.654s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.656s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_transport)
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport' for CMake module files
+[0.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_transport --target install -- -j12 -l12
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport' for CMake config files
+[0.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_transport', 'cmake_prefix_path')
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.ps1'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.dsv'
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.sh'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib'
+[0.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_transport', 'ld_library_path_lib')
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.dsv'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.sh'
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/bin'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib/pkgconfig/image_transport.pc'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib/python3.6/site-packages'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.ps1'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.dsv'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.sh'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.bash'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.zsh'
+[0.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_transport/share/colcon-core/packages/image_transport)
+[0.828s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests'
+[0.828s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.828s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.830s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_transport)
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport' for CMake module files
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/vision_opencv': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/vision_opencv -- -j12 -l12
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport' for CMake config files
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_transport', 'cmake_prefix_path')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/cmake_prefix_path.sh'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib'
+[0.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_transport', 'ld_library_path_lib')
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/hook/ld_library_path_lib.sh'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/bin'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib/pkgconfig/image_transport.pc'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_transport/lib/python3.6/site-packages'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.ps1'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.sh'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.bash'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_transport/share/image_transport/package.zsh'
+[0.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_transport/share/colcon-core/packages/image_transport)
+[0.845s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/image_common/camera_info_manager' with build type 'ament_cmake'
+[0.845s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/image_common/camera_info_manager'
+[0.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.845s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.848s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.850s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/openvslam' with build type 'ament_cmake'
+[0.850s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/openvslam'
+[0.851s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.851s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.854s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.856s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/publisher' with build type 'ament_cmake'
+[0.856s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/publisher'
+[0.857s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.857s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.859s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[0.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/opencv_tests': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --uninstall --editable --build-directory /home/mirella/openvslam/ros/2/build/opencv_tests/build
+[0.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/camera_info_manager': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_info_manager -- -j12 -l12
+[0.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/publisher': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher -- -j12 -l12
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/vision_opencv' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/vision_opencv -- -j12 -l12
+[0.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/vision_opencv': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/vision_opencv --target install -- -j12 -l12
+[0.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/camera_info_manager' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_info_manager -- -j12 -l12
+[0.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/camera_info_manager': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_info_manager --target install -- -j12 -l12
+[0.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam -- -j12 -l12
+[0.982s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv' for CMake module files
+[0.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/vision_opencv' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/vision_opencv --target install -- -j12 -l12
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv' for CMake config files
+[0.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/bin'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/lib/python3.6/site-packages'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.ps1'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.dsv'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.sh'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.bash'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.zsh'
+[0.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/openvslam': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12
+[1.008s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv' for CMake module files
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv' for CMake config files
+[1.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/bin'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/vision_opencv/lib/python3.6/site-packages'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.ps1'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.sh'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.bash'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/vision_opencv/share/vision_opencv/package.zsh'
+[1.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[1.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_info_manager)
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager' for CMake module files
+[1.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/camera_info_manager' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/camera_info_manager --target install -- -j12 -l12
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager' for CMake config files
+[1.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_info_manager', 'cmake_prefix_path')
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.ps1'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.sh'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib'
+[1.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_info_manager', 'ld_library_path_lib')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.dsv'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.sh'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/bin'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib/pkgconfig/camera_info_manager.pc'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib/python3.6/site-packages'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.ps1'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.sh'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.bash'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.zsh'
+[1.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/camera_info_manager/share/colcon-core/packages/camera_info_manager)
+[1.094s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_info_manager)
+[1.094s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager' for CMake module files
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager' for CMake config files
+[1.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_info_manager', 'cmake_prefix_path')
+[1.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/cmake_prefix_path.sh'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib'
+[1.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_info_manager', 'ld_library_path_lib')
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.ps1'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.dsv'
+[1.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/hook/ld_library_path_lib.sh'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/bin'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib/pkgconfig/camera_info_manager.pc'
+[1.101s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/camera_info_manager/lib/python3.6/site-packages'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.dsv'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.bash'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/camera_info_manager/share/camera_info_manager/package.zsh'
+[1.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/camera_info_manager/share/colcon-core/packages/camera_info_manager)
+[1.103s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mirella/openvslam/ros/2/src/image_common/image_common' with build type 'ament_cmake'
+[1.104s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mirella/openvslam/ros/2/src/image_common/image_common'
+[1.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.108s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/eloquent'
+[1.111s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openvslam)
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam' for CMake module files
+[1.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/openvslam' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/openvslam --target install -- -j12 -l12
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam' for CMake config files
+[1.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('openvslam', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.ps1'
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.dsv'
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.sh'
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib'
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/bin'
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib/pkgconfig/openvslam.pc'
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib/python3.6/site-packages'
+[1.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.ps1'
+[1.116s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.dsv'
+[1.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.sh'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.bash'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.zsh'
+[1.117s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/openvslam/share/colcon-core/packages/openvslam)
+[1.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_common': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common -- -j12 -l12
+[1.137s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openvslam)
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam' for CMake module files
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam' for CMake config files
+[1.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('openvslam', 'cmake_prefix_path')
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.ps1'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.dsv'
+[1.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/hook/cmake_prefix_path.sh'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/bin'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib/pkgconfig/openvslam.pc'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/openvslam/lib/python3.6/site-packages'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.ps1'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.dsv'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.sh'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.bash'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/openvslam/share/openvslam/package.zsh'
+[1.143s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/openvslam/share/colcon-core/packages/openvslam)
+[1.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_common' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common -- -j12 -l12
+[1.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/image_common': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common --target install -- -j12 -l12
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/opencv_tests' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --uninstall --editable --build-directory /home/mirella/openvslam/ros/2/build/opencv_tests/build
+[1.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/mirella/openvslam/ros/2/build/opencv_tests/build install --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --record /home/mirella/openvslam/ros/2/build/opencv_tests/install.log --single-version-externally-managed
+[1.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_common)
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common' for CMake module files
+[1.253s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/image_common' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/image_common --target install -- -j12 -l12
+[1.253s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common' for CMake config files
+[1.254s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_common', 'cmake_prefix_path')
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.ps1'
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.dsv'
+[1.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.sh'
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/bin'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/lib/pkgconfig/image_common.pc'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/lib/python3.6/site-packages'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.ps1'
+[1.256s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.dsv'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.sh'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.bash'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.zsh'
+[1.258s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_common/share/colcon-core/packages/image_common)
+[1.278s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_common)
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common' for CMake module files
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common' for CMake config files
+[1.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_common', 'cmake_prefix_path')
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/hook/cmake_prefix_path.sh'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/bin'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/lib/pkgconfig/image_common.pc'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/image_common/lib/python3.6/site-packages'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.ps1'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.dsv'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.sh'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.bash'
+[1.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.zsh'
+[1.283s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/image_common/share/colcon-core/packages/image_common)
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests' for CMake module files
+[1.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/src/vision_opencv/opencv_tests' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/mirella/openvslam/ros/2/build/opencv_tests/build install --prefix /home/mirella/openvslam/ros/2/install/opencv_tests --record /home/mirella/openvslam/ros/2/build/opencv_tests/install.log --single-version-externally-managed
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests' for CMake config files
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests/lib'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests/bin'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests/lib/pkgconfig/opencv_tests.pc'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages'
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'pythonpath')
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/pythonpath.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/pythonpath.dsv'
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/hook/pythonpath.sh'
+[1.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opencv_tests)
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/package.ps1'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/package.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/package.sh'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/package.bash'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/opencv_tests/share/opencv_tests/package.zsh'
+[1.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/opencv_tests/share/colcon-core/packages/opencv_tests)
+[3.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/publisher' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher -- -j12 -l12
+[3.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mirella/openvslam/ros/2/build/publisher': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher --target install -- -j12 -l12
+[3.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(publisher)
+[3.769s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher' for CMake module files
+[3.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mirella/openvslam/ros/2/build/publisher' returned '0': CMAKE_PREFIX_PATH=/home/mirella/openvslam/ros/2/install/image_transport:/home/mirella/openvslam/ros/2/install/cv_bridge:/home/mirella/openvslam/ros/2/install/vision_opencv:/home/mirella/openvslam/ros/2/install/publisher:/home/mirella/openvslam/ros/2/install/openvslam:/home/mirella/openvslam/ros/2/install/image_common:/home/mirella/openvslam/ros/2/install/camera_info_manager:/home/mirella/openvslam/ros/2/install/image_geometry:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers:/home/mirella/openvslam/ros/2/install/opencv_tests:/opt/ros/eloquent LD_LIBRARY_PATH=/home/mirella/openvslam/ros/2/install/image_transport/lib:/home/mirella/openvslam/ros/2/install/cv_bridge/lib:/home/mirella/openvslam/ros/2/install/camera_info_manager/lib:/home/mirella/openvslam/ros/2/install/image_geometry/lib:/home/mirella/openvslam/ros/2/install/camera_calibration_parsers/lib:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib PYTHONPATH=/home/mirella/openvslam/ros/2/install/cv_bridge/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/opencv_tests/lib/python3.6/site-packages:/home/mirella/openvslam/ros/2/install/image_geometry/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages /usr/bin/cmake --build /home/mirella/openvslam/ros/2/build/publisher --target install -- -j12 -l12
+[3.770s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher' for CMake config files
+[3.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher', 'cmake_prefix_path')
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.ps1'
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.dsv'
+[3.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.sh'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/bin'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib/pkgconfig/publisher.pc'
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib/python3.6/site-packages'
+[3.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.ps1'
+[3.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.dsv'
+[3.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.sh'
+[3.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.bash'
+[3.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.zsh'
+[3.774s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/publisher/share/colcon-core/packages/publisher)
+[3.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(publisher)
+[3.792s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher' for CMake module files
+[3.792s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher' for CMake config files
+[3.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher', 'cmake_prefix_path')
+[3.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.ps1'
+[3.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.dsv'
+[3.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/hook/cmake_prefix_path.sh'
+[3.794s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib'
+[3.794s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/bin'
+[3.794s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib/pkgconfig/publisher.pc'
+[3.794s] Level 1:colcon.colcon_core.environment:checking '/home/mirella/openvslam/ros/2/install/publisher/lib/python3.6/site-packages'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.ps1'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.dsv'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.sh'
+[3.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.bash'
+[3.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/mirella/openvslam/ros/2/install/publisher/share/publisher/package.zsh'
+[3.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mirella/openvslam/ros/2/install/publisher/share/colcon-core/packages/publisher)
+[3.796s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.800s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.800s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.804s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.804s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.804s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.806s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.807s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mirella/openvslam/ros/2/install/local_setup.ps1'
+[3.807s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mirella/openvslam/ros/2/install/_local_setup_util_ps1.py'
+[3.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mirella/openvslam/ros/2/install/setup.ps1'
+[3.810s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mirella/openvslam/ros/2/install/local_setup.sh'
+[3.811s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mirella/openvslam/ros/2/install/_local_setup_util_sh.py'
+[3.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mirella/openvslam/ros/2/install/setup.sh'
+[3.813s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mirella/openvslam/ros/2/install/local_setup.bash'
+[3.814s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mirella/openvslam/ros/2/install/setup.bash'
+[3.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mirella/openvslam/ros/2/install/local_setup.zsh'
+[3.816s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mirella/openvslam/ros/2/install/setup.zsh'

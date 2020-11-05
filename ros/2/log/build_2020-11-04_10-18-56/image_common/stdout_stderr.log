@@ -1,0 +1,18 @@
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/package_run_dependencies/image_common
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/parent_prefix_path/image_common
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/path.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/environment/path.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.bash
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.sh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.zsh
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/local_setup.dsv
+-- Symlinking: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.dsv
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/ament_index/resource_index/packages/image_common
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/cmake/image_commonConfig.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/cmake/image_commonConfig-version.cmake
+-- Up-to-date symlink: /home/mirella/openvslam/ros/2/install/image_common/share/image_common/package.xml
