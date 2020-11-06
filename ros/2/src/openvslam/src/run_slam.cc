@@ -72,14 +72,6 @@ auto tf_msg = std::make_shared<geometry_msgs::msg::TransformStamped>();
 auto tf_msg_odom = std::make_shared<geometry_msgs::msg::TransformStamped>();
 std::shared_ptr<tf2_ros::TransformBroadcaster> odom_broadcaster;
 
-//auto odom_broadcaster = std::make_shared<tf2_ros::TransformBroadcaster>();
-//sensor_msgs::msg::Image::SharedPtr right_image_msg;
-//sensor_msgs::msg::Image::SharedPtr left_image_msg;
-//sensor_msgs::msg::CameraInfo::SharedPtr right_config;
-//sensor_msgs::msg::CameraInfo::SharedPtr left_config;
-//geometry_msgs::msg::TransformStamped::SharedPtr odom_trans;
-//geometry_msgs::msg::TransformStamped tf_msg;
-
 char s[25];
 std::string left_path = "/home/mirella/occupancy_grid/videos/scene_1/mav0/cam0/data/";
 std::string right_path = "/home/mirella/occupancy_grid/videos/scene_1/mav0/cam1/data/";
@@ -88,44 +80,35 @@ int i = 0;
 int a;
 std::chrono::_V2::steady_clock::time_point tp_0;
 
-void callback_time(){
-
-}
-
 
 void publi(auto cam_pose_, auto &odometry_pub_, auto node){
     Eigen::Matrix3d rotation_matrix = cam_pose_.block(0, 0, 3, 3);
     Eigen::Vector3d translation_vector = cam_pose_.block(0, 3, 3, 1);
 
-    tf2::Matrix3x3 tf_rotation_matrix(rotation_matrix(0, 0), rotation_matrix(0, 1), rotation_matrix(0, 2),
+    tf2::Matrix3x3 tf_camera_rotation(rotation_matrix(0, 0), rotation_matrix(0, 1), rotation_matrix(0, 2),
                                       rotation_matrix(1, 0), rotation_matrix(1, 1), rotation_matrix(1, 2),
                                       rotation_matrix(2, 0), rotation_matrix(2, 1), rotation_matrix(2, 2));
     
-    tf2::Vector3 tf_translation_vector(translation_vector(0), translation_vector(1), translation_vector(2));
-    // std::cout << "x_before: " << translation_vector(0) << std::endl <<
-    //             "y_before: " << translation_vector(1) << std::endl <<
-    //             "z_before: " << translation_vector(2) <<std::endl <<
-    //             std::endl;
-
+    tf2::Vector3 tf_camera_translation(translation_vector(0), translation_vector(1), translation_vector(2));
     //Coordinate transformation matrix from orb coordinate system to ros coordinate system
     //rotate 270deg about z and 270deg about x
-    tf2::Matrix3x3 tf_open_to_ros (0, 0, 1,
+    tf2::Matrix3x3 matTrans (0, 0, 1,
                                  -1, 0, 0,
                                  0,-1, 0);
 
-    //publish right handed, x forward, y right, z down (NED)
     //Transform actual coordinate system to ros coordinate system on camera coordinates
-    tf_rotation_matrix = tf_open_to_ros*tf_rotation_matrix;
-    tf_translation_vector = tf_open_to_ros*tf_translation_vector;
+    tf_camera_rotation = matTrans*tf_camera_rotation;
+    tf_camera_translation = matTrans*tf_camera_translation;
+
     //Inverse matrix
-    tf_rotation_matrix = tf_rotation_matrix.transpose();
-    tf_translation_vector = -(tf_rotation_matrix*tf_translation_vector);
+     tf_camera_rotation = tf_camera_rotation.transpose();
+    tf_camera_translation = -(tf_camera_rotation*tf_camera_translation);
 
-    tf_rotation_matrix = tf_open_to_ros*tf_rotation_matrix;
-    tf_translation_vector = tf_open_to_ros*tf_translation_vector;
+    tf_camera_rotation = matTrans*tf_camera_rotation;
+    tf_camera_translation = matTrans*tf_camera_translation;
 
-    tf2::Transform transform_tf(tf_rotation_matrix, tf_translation_vector);
-    cam_position = tf_translation_vector;
+    tf2::Transform transform_tf(tf_camera_rotation, tf_camera_translation);
+    cam_position = tf_camera_translation;
 
     // Create odometry message and update it with current camera pose
     odom_msg_->header.stamp = node->now();
@@ -140,18 +123,15 @@ void publi(auto cam_pose_, auto &odometry_pub_, auto node){
     odom_msg_->pose.pose.position.z = transform_tf.getOrigin().getZ();
     //odometry_pub_->publish(*odom_msg_);
 
-    //std::shared_ptr<tf2_ros::TransformBroadcaster> odom_broadcaster;
-    // std::shared_ptr<tf2_ros::TransformBroadcaster> odom_broadcaster;
-    //tf2_ros::TransformBroadcaster odom_broadcaster(node);
     odom_broadcaster = std::make_shared<tf2_ros::TransformBroadcaster>(node);
-    odom_trans->header.stamp =  node->now();
+    odom_trans->header.stamp =  odom_msg_->header.stamp;
     odom_trans->header.frame_id = "odom";
     odom_trans->child_frame_id = "base_link";
     odom_trans->transform.rotation.x = transform_tf.getRotation().getX();
     odom_trans->transform.rotation.y = transform_tf.getRotation().getY();
     odom_trans->transform.rotation.z = transform_tf.getRotation().getZ();
     odom_trans->transform.rotation.w = transform_tf.getRotation().getW();
-    odom_trans->transform.translation.x =  transform_tf.getOrigin().getX();
+    odom_trans->transform.translation.x = transform_tf.getOrigin().getX();
     odom_trans->transform.translation.y =  transform_tf.getOrigin().getY();
     odom_trans->transform.translation.z =  transform_tf.getOrigin().getZ();
     odom_broadcaster->sendTransform(*odom_trans);
@@ -258,6 +238,7 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     // initialize this node
     auto node = std::make_shared<rclcpp::Node>("run_slam");
 
+    // eloquent - eloquent
     std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_broadcaster;
     tf_broadcaster = std::make_shared<tf2_ros::StaticTransformBroadcaster>(node);
     //static tf2_ros::StaticTransformBroadcaster tf_broadcaster(node);
@@ -267,27 +248,12 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     tf_msg->transform.translation.x = 0.0;
     tf_msg->transform.translation.y = 0.0;
     tf_msg->transform.translation.z = 0.0;
-    tf_msg->transform.rotation.x = 0.0;
-    tf_msg->transform.rotation.y = 0.0;
-    tf_msg->transform.rotation.z = 0.0;
-    tf_msg->transform.rotation.w = 1.0;
+    tf_msg->transform.rotation.x = -0.5;
+    tf_msg->transform.rotation.y = 0.5;
+    tf_msg->transform.rotation.z = -0.5;
+    tf_msg->transform.rotation.w = 0.5;
     tf_broadcaster->sendTransform(*tf_msg);
     
-    // std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_broadcaster_odom;
-    // tf_broadcaster_odom = std::make_shared<tf2_ros::StaticTransformBroadcaster>(node);
-    // //static tf2_ros::StaticTransformBroadcaster tf_broadcaster(node);
-    // tf_msg_odom->header.stamp = node->now();
-    // tf_msg_odom->header.frame_id = "map";
-    // tf_msg_odom->child_frame_id = "odom";
-    // tf_msg_odom->transform.translation.x = 0.0;
-    // tf_msg_odom->transform.translation.y = 0.0;
-    // tf_msg_odom->transform.translation.z = 0.0;
-    // tf_msg_odom->transform.rotation.x = 0.0;
-    // tf_msg_odom->transform.rotation.y = 0.0;
-    // tf_msg_odom->transform.rotation.z = 0.0;
-    // tf_msg_odom->transform.rotation.w = 1.0;
-    // tf_broadcaster_odom->sendTransform(*tf_msg_odom);
-
     rmw_qos_profile_t custom_qos = rmw_qos_profile_default;
     custom_qos.depth = 1;
     auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect", 1);
@@ -295,43 +261,13 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     auto left_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/left/camera_info", 1);
     auto right_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/right/camera_info", 1);
     auto odometry_publisher = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 100);
-    // SLAM system subscribe LEFT image (the same used in my system)
+    // SLAM system subscribe LEFT image
     message_filters::Subscriber<sensor_msgs::msg::Image> left_image(node, "/video/image_raw");
-    //message_filters::Subscriber<sensor_msgs::msg::Image> right_image(node, "/right");
-    //message_filters::TimeSynchronizer<sensor_msgs::msg::Image, sensor_msgs::msg::Image> sync(left_image, right_image, 10);
     left_image.registerCallback(boost::bind(&callback, _1, left_publisher, right_publisher, 
                                             left_publisher_config, right_publisher_config, odometry_publisher, &SLAM, mask, node));
 
-    //sync.registerCallback(boost::bind(&callback, _1, _2, left_publisher, right_publisher, 
-    //                                        left_publisher_config, right_publisher_config, odometry_publisher, &SLAM, mask));
-
     rclcpp::executors::SingleThreadedExecutor exec;
     exec.add_node(node);
-
-    odom_trans->header.stamp =  node->now();
-    odom_trans->header.frame_id = "odom";
-    odom_trans->child_frame_id = "base_link";
-    odom_trans->transform.rotation.x = 0.0; //transform_tf.getRotation().getX();
-    odom_trans->transform.rotation.y = 0.0; //transform_tf.getRotation().getY();
-    odom_trans->transform.rotation.z = 0.0; //transform_tf.getRotation().getZ();
-    odom_trans->transform.rotation.w = 1.0; //transform_tf.getRotation().getW();
-    odom_trans->transform.translation.x =  0.0; //transform_tf.getOrigin().getX();
-    odom_trans->transform.translation.y =  0.0; //transform_tf.getOrigin().getY();
-    odom_trans->transform.translation.z =  0.0; //transform_tf.getOrigin().getZ();
-
-    
-    //odom_broadcaster->sendTransform(*odom_trans);
-
-    //auto my_callback = boost::bind(callback_time);
-    //rclcpp::WallTime<std::function<void()>(0.2,my_callback);
-    //node->create_wall_timer(0.2,  boost::bind(&callback_time));
-
-
-        
-    //auto timer = node.Timer(rclcpp.Duration(1), demo_callback);
-
-        //odom_broadcaster->sendTransform(*odom_trans);
-          // Pangolin needs to run in the main thread on OSX
 
     // Pangolin needs to run in the main thread on OSX
     std::thread thread([&]() {
