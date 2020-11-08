@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
     popl::OptionParser op("Allowed options");
     auto help = op.add<popl::Switch>("h", "help", "produce help message");
     auto img_dir_path = op.add<popl::Value<std::string>>("i", "img-dir", "directory path which contains images");
-    auto img_fps = op.add<popl::Value<unsigned int>>("", "fps", "FPS of images", 5);
+    auto img_fps = op.add<popl::Value<unsigned int>>("", "fps", "FPS of images", 15);
 
     try {
         op.parse(argc, argv);

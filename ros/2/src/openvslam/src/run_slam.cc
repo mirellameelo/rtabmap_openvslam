@@ -61,7 +61,6 @@
 #endif
 
 tf2::Vector3 cam_position;
-//nav_msgs::msg::Odometry::SharedPtr odom_msg_;
 auto odom_msg_ = std::make_shared<nav_msgs::msg::Odometry>();
 auto odom_trans = std::make_shared<geometry_msgs::msg::TransformStamped>();
 auto right_image_msg = std::make_shared<sensor_msgs::msg::Image>();
@@ -69,17 +68,10 @@ auto left_image_msg = std::make_shared<sensor_msgs::msg::Image>();
 auto right_config = std::make_shared<sensor_msgs::msg::CameraInfo>();
 auto left_config = std::make_shared<sensor_msgs::msg::CameraInfo>();
 auto tf_msg = std::make_shared<geometry_msgs::msg::TransformStamped>();
-auto tf_msg_odom = std::make_shared<geometry_msgs::msg::TransformStamped>();
 std::shared_ptr<tf2_ros::TransformBroadcaster> odom_broadcaster;
 
-char s[25];
-std::string left_path = "/home/mirella/occupancy_grid/videos/scene_1/mav0/cam0/data/";
-std::string right_path = "/home/mirella/occupancy_grid/videos/scene_1/mav0/cam1/data/";
-std::string extension = ".png";
-int i = 0;
-int a;
+const cv::Mat mask = cv::Mat{};
 std::chrono::_V2::steady_clock::time_point tp_0;
-
 
 void publi(auto cam_pose_, auto &odometry_pub_, auto node){
     Eigen::Matrix3d rotation_matrix = cam_pose_.block(0, 0, 3, 3);
@@ -93,8 +85,8 @@ void publi(auto cam_pose_, auto &odometry_pub_, auto node){
     //Coordinate transformation matrix from orb coordinate system to ros coordinate system
     //rotate 270deg about z and 270deg about x
     tf2::Matrix3x3 matTrans (0, 0, 1,
-                                 -1, 0, 0,
-                                 0,-1, 0);
+                            -1, 0, 0,
+                            0,-1, 0);
 
     //Transform actual coordinate system to ros coordinate system on camera coordinates
     tf_camera_rotation = matTrans*tf_camera_rotation;
@@ -141,16 +133,15 @@ void publi(auto cam_pose_, auto &odometry_pub_, auto node){
 
 void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
                 const sensor_msgs::msg::Image::ConstSharedPtr& right_image_msg_sub,
-                //std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> left_publisher,
+                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> left_publisher,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> right_publisher,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > left_publisher_config,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > right_publisher_config,
                 std::shared_ptr<rclcpp::Publisher<nav_msgs::msg::Odometry_<std::allocator<void> >, std::allocator<void>>> odometry_publisher,
                 openvslam::system* SLAM,
-                const cv::Mat mask,
                 std::shared_ptr<rclcpp::Node> node
                 ){
-    auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect", 1);
+
     std::array<double, 9> K0 = {457.00, 0, 320.00, 0, 457.00, 240.0, 0,0,1};   
     std::vector<double> d0 = {0,0,0,0,0};
     std::array<double, 12> P0 = {457.0, 0, 320.0, 0, 0, 457.0, 240.0, 0, 0, 0, 1, 0};
@@ -168,19 +159,21 @@ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
                                         cv_bridge::toCvShare(right_image_msg_sub, "bgr8")->image, timestamp, mask);
     publi(cam, odometry_publisher, node);
     if(cam_position[0] != 0.0){
-        a = 100000 + i;
-        sprintf(s, "%d", a);
         //LEFT image
-        std::string str_left = (left_path + s + extension).c_str();
-        const auto img_left = cv::imread(str_left, cv::IMREAD_UNCHANGED);
-        left_image_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_left).toImageMsg();
+        left_image_msg->data = left_image_msg_sub->data;
+        left_image_msg->encoding = left_image_msg_sub->encoding;
+        left_image_msg->step = left_image_msg_sub->step;
+        left_image_msg->height = left_image_msg_sub->height;
+        left_image_msg->width = left_image_msg_sub->width;
         left_image_msg->header.frame_id = "camera_link";
         left_image_msg->header.stamp = odom_msg_->header.stamp;
         
         //RIGHT image
-        std::string str_right = (right_path + s + extension).c_str();
-        const auto img_right = cv::imread(str_right, cv::IMREAD_UNCHANGED);
-        right_image_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_right).toImageMsg();
+        right_image_msg->data = right_image_msg_sub->data;
+        right_image_msg->encoding = right_image_msg_sub->encoding;
+        right_image_msg->step = right_image_msg_sub->step;
+        right_image_msg->height = right_image_msg_sub->height;
+        right_image_msg->width = right_image_msg_sub->width;
         right_image_msg->header.frame_id = "camera_link";
         right_image_msg->header.stamp = odom_msg_->header.stamp;
 
@@ -206,20 +199,19 @@ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
         right_config->p = P1;
         right_config->distortion_model = "plumb_bob";
 
-        // PULBICATIONS
+        // PUBLICATIONS
         odometry_publisher->publish(*odom_msg_);
         right_publisher->publish(*right_image_msg);
         left_publisher->publish(*left_image_msg);
         right_publisher_config->publish(*right_config);
         left_publisher_config->publish(*left_config);
     }
-    i++;
 }
 
 void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::string& vocab_file_path,
                    const std::string& mask_img_path, const bool eval_log, const std::string& map_db_path) {
     // load the mask image
-    const cv::Mat mask = mask_img_path.empty() ? cv::Mat{} : cv::imread(mask_img_path, cv::IMREAD_GRAYSCALE);
+    //const cv::Mat mask = mask_img_path.empty() ? cv::Mat{} : cv::imread(mask_img_path, cv::IMREAD_GRAYSCALE);
 
     // build a SLAM system
     openvslam::system SLAM(cfg, vocab_file_path);
@@ -256,20 +248,18 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     tf_msg->transform.rotation.w = 0.5;
     tf_broadcaster->sendTransform(*tf_msg);
     
-    rmw_qos_profile_t custom_qos = rmw_qos_profile_default;
-    custom_qos.depth = 1;
     auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect", 1);
     auto right_publisher = node->create_publisher<sensor_msgs::msg::Image>("/right/image_rect", 1);
     auto left_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/left/camera_info", 1);
     auto right_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/right/camera_info", 1);
     auto odometry_publisher = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 100);
-    // SLAM system subscribe LEFT image
+    // SLAM system subscribe LEFT and RIGHT image
     message_filters::Subscriber<sensor_msgs::msg::Image> left_image(node, "/image/left");
     message_filters::Subscriber<sensor_msgs::msg::Image> right_image(node, "/image/right");
     message_filters::TimeSynchronizer<sensor_msgs::msg::Image, sensor_msgs::msg::Image> sync(left_image, right_image, 10);
     
-    sync.registerCallback(boost::bind(&callback, _1, _2, right_publisher, 
-                                            left_publisher_config, right_publisher_config, odometry_publisher, &SLAM, mask, node));
+    sync.registerCallback(boost::bind(&callback, _1, _2, left_publisher, right_publisher, 
+                                            left_publisher_config, right_publisher_config, odometry_publisher, &SLAM, node));
 
     rclcpp::executors::SingleThreadedExecutor exec;
     exec.add_node(node);

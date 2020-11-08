@@ -3,6 +3,7 @@ devel/
 lib/
 videos/
 orb_vocab/
+log/
 .idea/
 cmake-build-debug/
 cmake-build-release/
