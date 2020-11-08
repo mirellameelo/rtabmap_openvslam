@@ -46,33 +46,45 @@ int main(int argc, char* argv[]) {
     rmw_qos_profile_t custom_qos = rmw_qos_profile_default;
     custom_qos.depth = 1;
 
-    auto publisher = image_transport::create_publisher(node.get(), "/video/image_raw", custom_qos);
+    auto publisher_left = image_transport::create_publisher(node.get(), "/image/left", custom_qos);
+    auto publisher_right = image_transport::create_publisher(node.get(), "/image/right", custom_qos);
 
-    sensor_msgs::msg::Image::SharedPtr msg;
+    sensor_msgs::msg::Image::SharedPtr msg_left, msg_right;
 
     // load video file
-    image_sequence sequence(img_dir_path->value(), img_fps->value());
-    const auto frames = sequence.get_frames();
 
     rclcpp::WallRate pub_rate(img_fps->value());
     rclcpp::executors::SingleThreadedExecutor exec;
 
     exec.add_node(node);
 
-    std::string extension = ".png";
+    std::string left_path = img_dir_path->value() + "/cam0/data/";
+    std::string right_path = img_dir_path->value() + "/cam1/data/";
+	std::string extension = ".png";
     char s[25];
     int a;
+    image_sequence sequence(left_path, img_fps->value());
+    const auto frames = sequence.get_frames();
 
     for (unsigned int i = 0; i < frames.size(); ++i) {
         a = 100000 + i;
         sprintf(s, "%d", a);
-        std::string stg_left = (img_dir_path->value() + s + extension).c_str();
+        std::string stg_left = (left_path + s + extension).c_str();
+        std::string stg_right = (right_path + s + extension).c_str();
         //const auto& frame = frames.at(i);
-        const auto img = cv::imread(stg_left, cv::IMREAD_UNCHANGED);
-        msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img).toImageMsg();
-        msg->header.stamp = node->now();
-        msg->header.frame_id = "image";
-        publisher.publish(msg);
+        const auto img_left = cv::imread(stg_left, cv::IMREAD_UNCHANGED);
+        const auto img_right = cv::imread(stg_right, cv::IMREAD_UNCHANGED);
+
+        msg_left = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_left).toImageMsg();
+        msg_left->header.stamp = node->now();
+        msg_left->header.frame_id = "image";
+
+        msg_right = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img_right).toImageMsg();
+        msg_right->header.stamp = msg_left->header.stamp;
+        msg_right->header.frame_id = "image";
+
+        publisher_left.publish(msg_left);
+        publisher_right.publish(msg_right);
         exec.spin_some();
         pub_rate.sleep();
     }

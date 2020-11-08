@@ -140,8 +140,8 @@ void publi(auto cam_pose_, auto &odometry_pub_, auto node){
 
 
 void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
-                //const sensor_msgs::msg::Image::ConstSharedPtr& right_image_msg_sub,
-                std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> left_publisher,
+                const sensor_msgs::msg::Image::ConstSharedPtr& right_image_msg_sub,
+                //std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> left_publisher,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void>>, std::allocator<void>>> right_publisher,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > left_publisher_config,
                 std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::CameraInfo_<std::allocator<void>>, std::allocator<void> > > right_publisher_config,
@@ -150,7 +150,7 @@ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
                 const cv::Mat mask,
                 std::shared_ptr<rclcpp::Node> node
                 ){
-   
+    auto left_publisher = node->create_publisher<sensor_msgs::msg::Image>("/left/image_rect", 1);
     std::array<double, 9> K0 = {457.00, 0, 320.00, 0, 457.00, 240.0, 0,0,1};   
     std::vector<double> d0 = {0,0,0,0,0};
     std::array<double, 12> P0 = {457.0, 0, 320.0, 0, 0, 457.0, 240.0, 0, 0, 0, 1, 0};
@@ -163,7 +163,9 @@ void callback(const sensor_msgs::msg::Image::ConstSharedPtr& left_image_msg_sub,
 
     const auto tp_1 = std::chrono::steady_clock::now();
     const auto timestamp = std::chrono::duration_cast<std::chrono::duration<double>>(tp_1 - tp_0).count();
-    auto cam = SLAM->feed_monocular_frame(cv_bridge::toCvShare(left_image_msg_sub, "bgr8")->image, timestamp, mask);
+    //auto cam = SLAM->feed_monocular_frame(cv_bridge::toCvShare(left_image_msg_sub, "bgr8")->image, timestamp, mask);
+    auto cam =  SLAM->feed_stereo_frame(cv_bridge::toCvShare(left_image_msg_sub, "bgr8")->image, 
+                                        cv_bridge::toCvShare(right_image_msg_sub, "bgr8")->image, timestamp, mask);
     publi(cam, odometry_publisher, node);
     if(cam_position[0] != 0.0){
         a = 100000 + i;
@@ -262,8 +264,11 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     auto right_publisher_config = node->create_publisher<sensor_msgs::msg::CameraInfo>("/right/camera_info", 1);
     auto odometry_publisher = node->create_publisher<nav_msgs::msg::Odometry>("/odom", 100);
     // SLAM system subscribe LEFT image
-    message_filters::Subscriber<sensor_msgs::msg::Image> left_image(node, "/video/image_raw");
-    left_image.registerCallback(boost::bind(&callback, _1, left_publisher, right_publisher, 
+    message_filters::Subscriber<sensor_msgs::msg::Image> left_image(node, "/image/left");
+    message_filters::Subscriber<sensor_msgs::msg::Image> right_image(node, "/image/right");
+    message_filters::TimeSynchronizer<sensor_msgs::msg::Image, sensor_msgs::msg::Image> sync(left_image, right_image, 10);
+    
+    sync.registerCallback(boost::bind(&callback, _1, _2, right_publisher, 
                                             left_publisher_config, right_publisher_config, odometry_publisher, &SLAM, mask, node));
 
     rclcpp::executors::SingleThreadedExecutor exec;
@@ -382,6 +387,9 @@ int main(int argc, char* argv[]) {
 
     // run tracking
     if (cfg->camera_->setup_type_ == openvslam::camera::setup_type_t::Monocular) {
+        mono_tracking(cfg, vocab_file_path->value(), mask_img_path->value(), eval_log->is_set(), map_db_path->value());
+    }
+    else if (cfg->camera_->setup_type_ == openvslam::camera::setup_type_t::Stereo) {
         mono_tracking(cfg, vocab_file_path->value(), mask_img_path->value(), eval_log->is_set(), map_db_path->value());
     }
     else {
